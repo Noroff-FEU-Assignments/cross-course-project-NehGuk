@@ -1,4 +1,5 @@
-h1,
-p {
-  text-align: 0, auto;
+/* testing comments on CSS */
+
+body {
+  text-align: auto, 0;
 }
