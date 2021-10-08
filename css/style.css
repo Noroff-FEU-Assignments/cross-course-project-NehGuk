@@ -1,5 +1,6 @@
 /* testing comments on CSS */
 
 body {
+  width: 600px;
   text-align: 0 auto;
 }
