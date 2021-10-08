@@ -2,5 +2,8 @@
 
 body {
   width: 600px;
-  text-align: 0 auto;
+}
+
+h1 {
+  text-align: center;
 }
