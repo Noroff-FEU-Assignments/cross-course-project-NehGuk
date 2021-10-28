@@ -10,15 +10,19 @@ maxdark #181a1f
 /* GLOBAL STYLES*/
 
 p {
-  color: white;
+  color: #f9fcfa;
+}
+
+h1 {
+  color: #f9fcfa;
 }
 
 h2 {
-  color: white;
+  color: #f9fcfa;
 }
 
 h3 {
-  color: white;
+  color: #f9fcfa;
 }
 
 body {
@@ -32,7 +36,7 @@ header {
 }
 
 nav li {
-  color: white;
+  color: #f9fcfa;
 }
 
 /* HOME */
@@ -55,12 +59,12 @@ nav li {
 
 .create-my-account a {
   display: inline-block;
-  background: red;
-  color: white;
+  background: #8e2c1e;
+  color: #f9fcfa;
 }
 
 .terms-and-privacy {
-  color: white;
+  color: #f9fcfa;
 }
 
 /* TOP RATED SECTION */
@@ -105,11 +109,11 @@ nav li {
 }
 
 .film-makers h4 {
-  color: white;
+  color: #f9fcfa;
 }
 
 .film-makers h5 {
-  color: white;
+  color: #f9fcfa;
 }
 
 /* NEW RELEASES SECTION */
@@ -128,8 +132,8 @@ nav li {
 
 .new-releases__btn-browse-catalogue {
   display: inline-block;
-  background: red;
-  color: white;
+  background: #8e2c1e;
+  color: #f9fcfa;
 }
 
 /* FOOTER */
