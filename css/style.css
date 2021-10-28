@@ -1,12 +1,145 @@
-/* Colour palette
-
+/* COLOUR PALETTE
 white #f9fcfa
 grey #707070
 blue #395ea9
 red #8e2c1e
 dark #252931
 maxdark #181a1f
-
 */
 
-/* Home */
+/* GLOBAL STYLES*/
+
+p {
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+
+h3 {
+  color: white;
+}
+
+body {
+  background: #181a1f;
+  margin: 0px;
+}
+
+header {
+  height: 183px;
+  background: #252931;
+}
+
+nav li {
+  color: white;
+}
+
+/* HOME */
+
+/* TOP ELEMENTS */
+
+.intro-boxes {
+  background: #395ea9;
+  display: inline-block;
+  margin: 10px 10px 10px 10px;
+}
+
+.create-my-account {
+  background-image: url("images/inspiration-images/felix-mooneeram-evlkOfkQ5rE-unsplash-edited.jpg");
+}
+
+.create-my-account {
+  /*BACKGROUND IMAGE HERE*/
+}
+
+.create-my-account a {
+  display: inline-block;
+  background: red;
+  color: white;
+}
+
+.terms-and-privacy {
+  color: white;
+}
+
+/* TOP RATED SECTION */
+
+.top-rated {
+  background: #252931;
+}
+
+.top-rated img {
+  width: 330px;
+  height: 440px;
+  object-fit: cover;
+}
+
+/* AWARD WINNING FILMS SECTION */
+
+.award-winning-films {
+  background: #252931;
+}
+
+.award-wining-films__film-card-main {
+  background: #181a1f;
+  display: inline-block;
+}
+
+.award-winning-films__featured {
+  width: 1086px;
+  height: 640px;
+}
+
+/* FILM MAKERS SECTION */
+
+.film-makers {
+  background: #252931;
+}
+
+.film-makers img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.film-makers h4 {
+  color: white;
+}
+
+.film-makers h5 {
+  color: white;
+}
+
+/* NEW RELEASES SECTION */
+
+.new-releases {
+  background: #181a1f;
+}
+
+.new-releases img {
+  display: inline-block;
+  width: 200px;
+}
+
+.new-releases__film-card {
+}
+
+.new-releases__btn-browse-catalogue {
+  display: inline-block;
+  background: red;
+  color: white;
+}
+
+/* FOOTER */
+
+footer {
+  background: #252931;
+  text-align: center;
+  padding: 30px;
+}
+
+.logo-footer {
+  width: 145px;
+}
