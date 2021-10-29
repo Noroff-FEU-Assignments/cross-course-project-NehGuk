@@ -42,33 +42,10 @@ font-style: normal;
 
 /* GLOBAL STYLES*/
 
-p {
-  color: #f9fcfa;
-}
-
-h1 {
-  color: #f9fcfa;
-}
-
-h2 {
-  color: #f9fcfa;
-}
-
-h3 {
-  color: #f9fcfa;
-  font-family: Futura;
-  font-size: 40px;
-}
-
 body {
   background: #181a1f;
   margin: 0px 0px;
   font-family: Futura, Tahoma, Verdana, sans-serif;
-}
-
-header {
-  height: 130px;
-  background: #181a1f;
 }
 
 nav {
@@ -103,6 +80,29 @@ nav li {
   color: #395ea9;
 }
 
+p {
+  color: #f9fcfa;
+}
+
+h1 {
+  color: #f9fcfa;
+}
+
+h2 {
+  color: #f9fcfa;
+}
+
+h3 {
+  color: #f9fcfa;
+  font-family: Futura;
+  font-size: 40px;
+}
+
+header {
+  height: 130px;
+  background: #181a1f;
+}
+
 /* HOME */
 
 /* TOP ELEMENTS */
@@ -110,6 +110,11 @@ nav li {
 .home-top__main-logo img {
   margin-left: 350px;
   max-width: 500px;
+}
+
+.logo-mini {
+  padding: 10px;
+  width: 60px;
 }
 
 .home-top__intro-boxes-container {
@@ -416,4 +421,90 @@ footer {
 
 .logo-footer {
   width: 145px;
+}
+
+/* MEDIA QUERIES*/
+
+@media only screen and (max-width: 600px) {
+  nav ul a {
+    font-size: 16px;
+  }
+
+  nav li {
+    color: #f9fcfa;
+    display: inline-block;
+    padding: 10px;
+    float: right;
+  }
+
+  .home-top__main-logo img {
+    display: none;
+  }
+
+  .home-top__intro-boxes-container {
+    display: grid;
+    max-width: 1000px;
+    margin: 90px auto;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: auto;
+    gap: 20px;
+    font-size: 20px;
+  }
+
+  div.home-top__intro-boxes {
+    margin: 5px 40px;
+  }
+
+  .create-my-account a {
+    font-size: 30px;
+    text-decoration: none;
+    background: #8e2c1e;
+    color: #f9fcfa;
+    padding: 10px 40px;
+  }
+
+  .create-my-account {
+    display: none;
+    background-image: url(/images/inspiration-images/felix-mooneeram-edited.jpg);
+    background-position: -20px 0px;
+
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  section h2 {
+    display: block;
+    text-align: center;
+    padding-left: 0px;
+  }
+
+  .top.rated__list {
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+
+  .award-winning-films {
+    display: none;
+  }
+
+  section.film-makers .film-makers__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .new-releases__container {
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .logo-mini {
+    display: none;
+  }
 }
