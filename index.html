@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Home | SquaredEyes</title>
+    <title>Home | SquareEyes</title>
     <meta charset="utf-8" dir="ltr" lang="en">
     
     <link rel="stylesheet" href="https://use.typekit.net/rif0eeq.css">
@@ -13,8 +13,8 @@
     <header>
       <nav>
         <ul>
-          <li>Login</li>
-          <li>Sign up</li>
+          <li><a class="cta-sign-up">Sign up</a></li>          
+          <li><a>Login</a></li>
         </ul>
       </nav>
     </header>
@@ -25,18 +25,18 @@
         <div class="home-top__main-logo">
           <img src="images/logo/logo-blue.png">
         </div>
-        <div class="intro-boxes">
-          <div>
+        <div class="home-top__intro-boxes-container">
+          <div class="home-top__intro-boxes">
             <img src="images/icons/home-white-Icon awesome-play-circle.png">
-          <p>High-quality films crafted by independent artists</p>
+            <p><b>High-quality</b> films crafted by independent artists</p>
           </div>
-          <div>
+          <div class="home-top__intro-boxes">
             <img src="images/icons/home-white-Icon awesome-video.png">
-          <p>Where passionate film-lovers support the work of passionate film makers</p>
+            <p>Where passionate <b>film-lovers</b> support the work of passionate <b>film makers</b></p>
           </div>
-          <div>
+          <div class="home-top__intro-boxes">
             <img src="images/icons/home-white-Icon material-ondemand-video.png">
-          <p>A video streaming service on a pay-per-view basis</p>
+            <p>A <b>video streaming</b> service on a pay-per-view basis</p>
           </div>
         </div>
       </section>
@@ -49,24 +49,32 @@
 
       <section class="top-rated">
          <h2>Top rated</h2>
-         <div>
-          <img src="images/film-posters-top/top-film1.png">
-          <img src="images/film-posters-top/top-film2.png">
-          <img src="images/film-posters-top/top-film3.png">
-          <img src="images/film-posters-top/top-film4.png">
-          <img src="images/film-posters-top/top-film5.png">
-          <img src="images/film-posters-top/top-film6.png">
-          <img src="images/film-posters-top/top-film7.png">
+         <div class="top-rated__list">
+          <div class="top-rated__film">
+            <img src="images/film-posters-top/top-film1.png">
+          </div>
+          <div class="top-rated__film">
+            <img src="images/film-posters-top/top-film2.png">
+          </div>
+          <div class="top-rated__film">
+            <img src="images/film-posters-top/top-film3.png">
+          </div>
+          <div class="top-rated__film">
+            <img src="images/film-posters-top/top-film4.png">
+          </div>
+          <div class="top-rated__film">
+            <img src="images/film-posters-top/top-film5.png">
+          </div>
          </div>
       </section>
 
       <section class="award-winning-films">
         <h2>Award Winning Films</h2>
         <div class="award-wining-films__film-card-main">
-          <img src="images/film-main-features/1game-magic-the-gathering-artistic-earth-wallpaper-preview.jpg" class="award-winning-films__featured">
+          <img src="images/film-main-features/1lotus.jpg">
           <h3>The Purple Lotus</h3>
-          <p>Director: <span>Txai Terri Aquino</span></p>
-          <p>Country: <span>Brazil</span></p>
+          <p><span class="award-wining-films__details"><b>Director</b></span>  Txai Terri Aquino</p>
+          <p><span class="award-wining-films__details"><b>Country</b></span>  Brazil</p>
           <p>Comedy > Animation > Scifi > Brazil</p>
           <div>
             <img src="images/stars/star-filled.png">
@@ -81,6 +89,21 @@
        <section class="film-makers">
          <h2>Film makers</h2>
          <div class="film-makers__container">   
+            <div class="filme-makers__card">
+              <img src="images/filmmakers/13.jpg">
+              <h4 class="film-makers__name">Ana Belache</h4>
+              <h5 class="film-makers__country">Hungary</h5>
+            </div>
+            <div class="filme-makers__card">
+              <img src="images/filmmakers/13.jpg">
+              <h4 class="film-makers__name">Ana Belache</h4>
+              <h5 class="film-makers__country">Hungary</h5>
+            </div>
+            <div class="filme-makers__card">
+              <img src="images/filmmakers/13.jpg">
+              <h4 class="film-makers__name">Ana Belache</h4>
+              <h5 class="film-makers__country">Hungary</h5>
+            </div>
             <div class="filme-makers__card">
               <img src="images/filmmakers/13.jpg">
               <h4 class="film-makers__name">Ana Belache</h4>
@@ -145,7 +168,7 @@
               <img src="images/film-posters-new-releases/new-releases-9.png">
             </div>
           </div>
-          <div>
+          <div class="new-releases__btn-area">
             <a href="#" class="new-releases__btn-browse-catalogue">Browse our catalogue</a>
           </div>
       </section>
