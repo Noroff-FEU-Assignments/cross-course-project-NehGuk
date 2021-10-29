@@ -108,7 +108,7 @@ nav li {
 /* TOP ELEMENTS */
 
 .home-top__main-logo img {
-  margin-left: 250px;
+  margin-left: 350px;
   max-width: 500px;
 }
 
@@ -117,19 +117,24 @@ nav li {
   max-width: 1000px;
   margin: 90px auto;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
   gap: 20px;
   font-size: 20px;
 }
 
 .home-top__intro-boxes {
   background: #395ea9;
-  padding: 30px;
+  padding: 20px 20px;
+}
+
+.box3 {
+  padding-top: 40px;
 }
 
 /* CREATE MY ACCOUNT SECTION */
 
 .create-my-account {
-  background-image: url(/images/inspiration-images/create-account-geoffrey-moffett.jpg);
+  background-image: url(/images/inspiration-images/gradient-test-2.png);
   min-height: 70vh;
   max-width: 100%;
   background-size: cover;
@@ -150,11 +155,21 @@ nav li {
   padding: 10px 90px;
 }
 
+.create-my-account a:hover {
+  background: #f9fcfa;
+  color: #8e2c1e;
+}
+
 .create-my-account p {
   color: #f9fcfa;
   font-size: 15px;
   text-decoration: underline;
-  padding-top: 40px;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.create-my-account p:hover {
+  opacity: 50%;
 }
 
 /* TOP RATED SECTION */
@@ -178,10 +193,14 @@ nav li {
   object-fit: contain;
 }
 
+.top-rated img:hover {
+  opacity: 40%;
+}
+
 .top-rated h2 {
   margin-top: 0px;
   padding-top: 50px;
-  padding-left: 215px;
+  padding-left: 320px;
 }
 
 /* AWARD WINNING FILMS SECTION */
@@ -195,20 +214,95 @@ nav li {
   display: inline-block;
 }
 
-.award-winning-films__featured {
-  width: 1086px;
-  height: 640px;
-}
-
-.award-wining-films__film-card-main span {
+span {
   color: #707070;
   padding-right: 20px;
+}
+
+.title {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.director {
+  margin-top: 0px;
+}
+
+.country {
+  margin-top: 0px;
+}
+
+.breadcrumbs {
+  color: #707070;
+  margin-top: 0px;
 }
 
 .award-winning-films h2 {
   margin-top: 0px;
   padding-top: 80px;
-  padding-left: 215px;
+  padding-left: 320px;
+}
+
+/* AWARD WINNING SECTION - FEATURE FILM CARD */
+
+.grid-container {
+  width: 800px;
+  margin: auto;
+
+  display: grid;
+  grid-template-areas:
+    "image image"
+    "title stars"
+    "director director"
+    "country country"
+    "breadcrumbs breadcrumbs";
+}
+
+.grid-item {
+  background-color: #181a1f;
+}
+
+.grid-item-1 {
+  grid-area: image;
+  object-fit: cover;
+}
+
+.grid-item-2 {
+  grid-area: title;
+  font-size: 36px;
+  padding-left: 20px;
+}
+
+.grid-item-2 h3 {
+  grid-area: title;
+  font-size: 60px;
+}
+.grid-item-3 {
+  grid-area: director;
+  font-size: 24px;
+  padding-left: 20px;
+}
+
+.grid-item-4 {
+  grid-area: country;
+  font-size: 24px;
+  padding-left: 20px;
+}
+
+.grid-item-5 {
+  grid-area: breadcrumbs;
+  font-size: 24px;
+  padding-left: 20px;
+}
+
+.grid-item-6 img {
+  grid-area: stars;
+  float: right;
+  padding-right: 10px;
+  padding-top: 25px;
+}
+
+.grid-container img:hover {
+  opacity: 50%;
 }
 
 /* FILM MAKERS SECTION */
@@ -224,26 +318,38 @@ nav li {
   object-fit: cover;
 }
 
+.film-makers img:hover {
+  opacity: 50%;
+}
+
 .film-makers__container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   max-width: 800px;
   margin: auto;
   gap: 20px;
+  padding-bottom: 100px;
 }
 
 .film-makers h2 {
   margin-top: 0px;
   padding-top: 80px;
-  padding-left: 215px;
+  padding-left: 320px;
 }
 
 .film-makers h4 {
   color: #f9fcfa;
+  margin-bottom: 5px;
 }
 
 .film-makers h5 {
   color: #f9fcfa;
+  opacity: 50%;
+  margin-top: 0px;
+}
+
+.film-makers__card {
+  margin-bottom: 0px;
 }
 
 /* NEW RELEASES SECTION */
@@ -260,6 +366,9 @@ nav li {
   object-fit: cover;
 }
 
+.new-releases img:hover {
+  opacity: 50%;
+}
 .new-releases__container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
