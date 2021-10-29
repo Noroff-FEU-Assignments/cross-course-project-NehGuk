@@ -179,7 +179,9 @@ nav li {
 }
 
 .top.rated__list {
-  max-width: 100%;
+  display: inline-block;
+  width: 100%;
+  margin: auto;
 }
 
 .top-rated__film {
@@ -268,13 +270,12 @@ span {
 
 .grid-item-2 {
   grid-area: title;
-  font-size: 36px;
   padding-left: 20px;
 }
 
 .grid-item-2 h3 {
   grid-area: title;
-  font-size: 60px;
+  font-size: 50px;
 }
 .grid-item-3 {
   grid-area: director;
@@ -298,7 +299,7 @@ span {
   grid-area: stars;
   float: right;
   padding-right: 10px;
-  padding-top: 25px;
+  padding-top: 20px;
 }
 
 .grid-container img:hover {
