@@ -163,18 +163,25 @@ nav li {
   background: #252931;
 }
 
-.top-rated__list {
-  display: inline;
+.top.rated__list {
+  max-width: 100%;
+}
+
+.top-rated__film {
+  display: inline-block;
+  padding: 10px;
 }
 
 .top-rated img {
-  width: 330px;
-  object-fit: cover;
+  width: 250px;
+  height: 350px;
+  object-fit: contain;
 }
 
 .top-rated h2 {
   margin-top: 0px;
   padding-top: 50px;
+  padding-left: 215px;
 }
 
 /* AWARD WINNING FILMS SECTION */
@@ -200,7 +207,8 @@ nav li {
 
 .award-winning-films h2 {
   margin-top: 0px;
-  padding-top: 40px;
+  padding-top: 80px;
+  padding-left: 215px;
 }
 
 /* FILM MAKERS SECTION */
@@ -221,11 +229,13 @@ nav li {
   grid-template-columns: 1fr 1fr 1fr;
   max-width: 800px;
   margin: auto;
+  gap: 20px;
 }
 
 .film-makers h2 {
   margin-top: 0px;
-  padding-top: 40px;
+  padding-top: 80px;
+  padding-left: 215px;
 }
 
 .film-makers h4 {
@@ -242,24 +252,20 @@ nav li {
   background: 181a1f;
   max-width: 800px;
   margin: auto;
-  grid-template-areas:
-    "title"
-    "container"
-    "button";
 }
 
 .new-releases img {
   width: 200px;
+  height: 300px;
   object-fit: cover;
 }
 
 .new-releases__container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  width: 1000px;
+  width: 800px;
   margin: auto;
-  row-gap: 20px;
-  column-gap: 20px;
+  gap: 20px;
 }
 
 .new-releases__film-card {
@@ -267,12 +273,22 @@ nav li {
 
 .new-releases__btn-area {
   text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .new-releases__btn-browse-catalogue {
   display: inline-block;
   background: #8e2c1e;
   color: #f9fcfa;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 15px 40px;
+}
+
+.new-releases__btn-browse-catalogue:hover {
+  background: white;
+  color: #8e2c1e;
 }
 
 .new-releases h2 {
