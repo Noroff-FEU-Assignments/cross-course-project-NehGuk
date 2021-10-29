@@ -62,7 +62,7 @@ h3 {
 
 body {
   background: #181a1f;
-  margin: 0px;
+  margin: 0px 0px;
   font-family: Futura, Tahoma, Verdana, sans-serif;
 }
 
@@ -70,6 +70,18 @@ header {
   height: 130px;
   background: #252931;
 }
+
+
+nav {
+    background-color: #181a1f;
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+
+
+}
+    
+
 
 nav ul a {
   font-size: 24px;
@@ -110,12 +122,27 @@ nav li {
   padding: 30px;
 }
 
+
+/* CREATE MY ACCOUNT SECTION */
+
 .create-my-account {
   background-image: url("images/inspiration-images/felix-mooneeram-evlkOfkQ5rE-unsplash-edited.jpg");
 }
 
-.create-my-account {
-  /*BACKGROUND IMAGE HERE*/
+.create-my-account a {
+    display: inline-block;
+    text-align: center;
+    background: #8e2c1e;
+    color: #f9fcfa;
+    padding: 10px 40px;;
+}
+
+.create-my-account p {
+    display: block;
+    text-align: center;
+}
+
+
 }
 
 .create-my-account a {
