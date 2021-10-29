@@ -154,6 +154,7 @@ nav li {
   color: #f9fcfa;
   font-size: 15px;
   text-decoration: underline;
+  padding-top: 40px;
 }
 
 /* TOP RATED SECTION */
@@ -169,6 +170,11 @@ nav li {
 .top-rated img {
   width: 330px;
   object-fit: cover;
+}
+
+.top-rated h2 {
+  margin-top: 0px;
+  padding-top: 50px;
 }
 
 /* AWARD WINNING FILMS SECTION */
@@ -192,6 +198,11 @@ nav li {
   padding-right: 20px;
 }
 
+.award-winning-films h2 {
+  margin-top: 0px;
+  padding-top: 40px;
+}
+
 /* FILM MAKERS SECTION */
 
 .film-makers {
@@ -210,6 +221,11 @@ nav li {
   grid-template-columns: 1fr 1fr 1fr;
   max-width: 800px;
   margin: auto;
+}
+
+.film-makers h2 {
+  margin-top: 0px;
+  padding-top: 40px;
 }
 
 .film-makers h4 {
@@ -257,6 +273,11 @@ nav li {
   display: inline-block;
   background: #8e2c1e;
   color: #f9fcfa;
+}
+
+.new-releases h2 {
+  margin-top: 0px;
+  padding-top: 40px;
 }
 
 /* FOOTER */
