@@ -80,14 +80,8 @@ nav li {
   color: #395ea9;
 }
 
-p {
-  color: #f9fcfa;
-}
-
-h1 {
-  color: #f9fcfa;
-}
-
+p,
+h1,
 h2 {
   color: #f9fcfa;
 }
@@ -107,9 +101,15 @@ header {
 
 /* TOP ELEMENTS */
 
+.home-top {
+  position: relative;
+}
+
 .home-top__main-logo img {
-  margin-left: 350px;
-  max-width: 500px;
+  width: 500px;
+  position: relative;
+  top: 40px;
+  left: 300px;
 }
 
 .logo-mini {
@@ -142,10 +142,9 @@ header {
   background-image: url(/images/inspiration-images/gradient-test-2.png);
   min-height: 70vh;
   max-width: 100%;
-  background-size: cover;
+  background-size: 100%;
+
   background-position: 30px 0px;
-  /*display: grid;
-  place-items: center;*/
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -174,6 +173,42 @@ header {
 }
 
 .create-my-account p:hover {
+  opacity: 50%;
+}
+
+/* CREATE MY ACCOUNT MOBILE SECTION*/
+
+.create-my-account-m {
+  position: relative;
+}
+
+.create-my-account-m a {
+  font-size: 30px;
+  text-decoration: none;
+  background: #8e2c1e;
+  color: #f9fcfa;
+  padding: 20px 50px;
+  position: relative;
+  top: -20px;
+  left: 10px;
+}
+
+.create-my-account-m a:hover {
+  background: #f9fcfa;
+  color: #8e2c1e;
+}
+
+.create-my-account-m p {
+  color: #f9fcfa;
+  font-size: 15px;
+  text-decoration: underline;
+  margin-top: 60px;
+  position: relative;
+  top: -20px;
+  left: 10px;
+}
+
+.create-my-account-m p:hover {
   opacity: 50%;
 }
 
@@ -438,7 +473,9 @@ footer {
   }
 
   .home-top__main-logo img {
-    display: none;
+    top: 10px;
+    width: 300px;
+    left: 30px;
   }
 
   .home-top__intro-boxes-container {
@@ -465,14 +502,6 @@ footer {
 
   .create-my-account {
     display: none;
-    background-image: url(/images/inspiration-images/felix-mooneeram-edited.jpg);
-    background-position: -20px 0px;
-
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
   }
 
   section h2 {
@@ -507,4 +536,7 @@ footer {
   .logo-mini {
     display: none;
   }
+
+  .create-my-account-m {
+    display: none;
 }
