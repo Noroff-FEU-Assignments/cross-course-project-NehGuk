@@ -286,7 +286,19 @@ span {
 
 /* AWARD WINNING SECTION - FEATURE FILM CARD */
 
+
+.award-winning-films {
+  position: relative;
+}
+
+.award-winning-films__position {
+  position: relative;
+  right: 70px;
+  
+}
+
 .grid-container {
+  position: relative;
   width: 800px;
   margin: auto;
 
@@ -306,6 +318,23 @@ span {
 .grid-item-1 {
   grid-area: image;
   object-fit: cover;
+  background-image: url(/images/icons/awesome-play-circle.png);
+  background-repeat: no-repeat;
+  background-size: 100px;
+  background-position: center;
+  
+}
+
+.arrow-left {
+  position: absolute;
+  left: -700px;
+  top: -325px;
+}
+
+.arrow-right {
+  position: absolute;
+  left: 400px;
+  top: -355px;
 }
 
 .grid-item-2 {
@@ -492,12 +521,8 @@ footer {
     margin: 5px 40px;
   }
 
-  .create-my-account a {
-    font-size: 30px;
-    text-decoration: none;
-    background: #8e2c1e;
-    color: #f9fcfa;
-    padding: 10px 40px;
+  .create-my-account-m a, p {
+    text-align: center;
   }
 
   .create-my-account {
@@ -519,6 +544,7 @@ footer {
   .award-winning-films {
     display: none;
   }
+
 
   section.film-makers .film-makers__container {
     display: grid;
