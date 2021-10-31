@@ -11,3 +11,7 @@
 ### Accessibility score
 
 - Score: 95% (https://www.webaccessibility.com)
+
+### Comments
+
+- My initial prototype includes horizontal scrolling carroussels, so I am still unable to replicated it with just basic HTML and CSS. As a result, I have changed the look and feel of some sections of the mobile size.
