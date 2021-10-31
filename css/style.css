@@ -454,7 +454,9 @@ span {
 }
 
 .new-releases-section__grid img {
-  max-width: 100%;
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
 }
 
 .new-releases-section__grid img:hover {
@@ -565,6 +567,10 @@ footer {
     display: none;
   }
 
+  .film-makers-section h2 {
+    padding-top: 0px;
+  }
+
   .film-makers-section__grid {
     width: 70%;
     margin: auto;
@@ -600,12 +606,16 @@ footer {
 
   .new-releases-section__grid img {
     width: 110px;
-    height: 110px;
+    height: 150px;
   }
 
   .new-releases-section h2 {
     text-align: left;
   }
 
+  .new-releases-section-cta-area__btn {
+    font-size: 20px; 
+    padding: 20px 50px;
+  }
 
 
