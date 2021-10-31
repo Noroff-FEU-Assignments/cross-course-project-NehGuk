@@ -268,7 +268,7 @@ span {
 .award-winning-films h2 {
   margin-top: 0px;
   padding-top: 80px;
-  padding-left: 320px;
+  padding-left: 285px;
 }
 
 /* AWARD WINNING FILMS - FEATURED FILM CARD */
@@ -280,7 +280,7 @@ span {
 
 .award-winning-films__position {
   position: relative;
-  right: 70px;
+  right: 30px;
 }
 
 .grid-container {
