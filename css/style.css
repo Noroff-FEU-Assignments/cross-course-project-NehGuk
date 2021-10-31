@@ -37,7 +37,6 @@ Futura PT Bold
 font-family: futura-pt-bold, sans-serif;
 font-weight: 700;
 font-style: normal;
-
 */
 
 /* GLOBAL STYLES*/
@@ -141,9 +140,7 @@ header {
 .create-my-account {
   background-image: url(/images/inspiration-images/gradient-test-2.png);
   min-height: 70vh;
-  max-width: 100%;
   background-size: 100%;
-
   background-position: 30px 0px;
   display: flex;
   flex-direction: column;
@@ -295,15 +292,13 @@ span {
 
 /* AWARD WINNING SECTION - FEATURE FILM CARD */
 
-
 .award-winning-films {
   position: relative;
 }
 
 .award-winning-films__position {
   position: relative;
-  right: 70px;
-  
+  right: 70px;  
 }
 
 .grid-container {
@@ -534,10 +529,6 @@ footer {
     text-align: center;
   }
 
-  
-
-
-
   .create-my-account {
     display: none;
   }
@@ -557,7 +548,6 @@ footer {
   .award-winning-films {
     display: none;
   }
-
 
   section.film-makers .film-makers__container {
     display: grid;
