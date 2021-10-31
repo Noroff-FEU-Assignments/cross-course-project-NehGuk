@@ -243,16 +243,12 @@ span {
   margin-top: 5px;
   margin-bottom: 10px;
 }
-.director {
+.director, .country {
   margin-top: 0px;
 }
 
 .director span {
   font-size: 20px;
-}
-
-.country {
-  margin-top: 0px;
 }
 
 .country span {
@@ -287,7 +283,6 @@ span {
   position: relative;
   width: 800px;
   margin: auto;
-
   display: grid;
   grid-template-areas:
     "image image"
