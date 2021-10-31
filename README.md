@@ -1,9 +1,13 @@
 # cross-course-project-NehGuk
 
-cross-course-project-NehGuk created by GitHub Classroom
+## First delivery
 
-Testing: adding a new README file from GitHub.
+### Testing routine
 
-Important: the link to this repository (https://github.com/Noroff-FEU-Assignments/cross-course-project-NehGuk.git) can only be accessed once you are logged into GitHub. It won't work if you are logged out.
+- OK: tested on a Macbookpro 13'' (Firefox and Safari)
+- OK: tested on an iPad Air (Safari)
+- OK: tested on an iPhone 6s (Safari)
 
-Testiiiiiiing!
+### Accessibility score
+
+- Score: 95% (https://www.webaccessibility.com)
