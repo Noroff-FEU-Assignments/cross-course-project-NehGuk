@@ -43,8 +43,10 @@ nav li {
 }
 
 .cta-sign-up:hover {
-  background: white;
-  color: #395ea9;
+  background: #181a1f;
+  color: #f9fcfa;
+  border: solid #395ea9 2px;
+  
 }
 
 p,
@@ -127,6 +129,7 @@ header {
 .create-my-account a:hover {
   background: #f9fcfa;
   color: #8e2c1e;
+  
 }
 
 .create-my-account p {
