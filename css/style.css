@@ -269,13 +269,22 @@ span {
   margin-top: 0px;
 }
 
+.director span {
+  font-size: 20px;
+}
+
 .country {
   margin-top: 0px;
+}
+
+.country span {
+  font-size: 20px;
 }
 
 .breadcrumbs {
   color: #707070;
   margin-top: 0px;
+  font-size: 20px;
 }
 
 .award-winning-films h2 {
@@ -320,7 +329,7 @@ span {
   object-fit: cover;
   background-image: url(/images/icons/awesome-play-circle.png);
   background-repeat: no-repeat;
-  background-size: 100px;
+  background-size: 150px;
   background-position: center;
   
 }
@@ -521,9 +530,13 @@ footer {
     margin: 5px 40px;
   }
 
-  .create-my-account-m a, p {
+  .create-my-account-m {
     text-align: center;
   }
+
+  
+
+
 
   .create-my-account {
     display: none;
@@ -552,10 +565,18 @@ footer {
   }
 
   .new-releases__container {
-    display: block;
+    display: grid;
+    grid-template-columns: 50% 50%;
     width: 100%;
-    margin: auto;
+    row-gap: 0px;
+    column-gap: 25px;
   }
+
+  .new-releases h2 {
+    text-align: left;
+    margin-left: 20px;
+  }
+
 }
 
 @media only screen and (min-width: 600px) {
