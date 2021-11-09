@@ -1,0 +1,123 @@
+/* COLOUR PALETTE
+white #f9fcfa
+grey #707070
+blue #395ea9
+red #8e2c1e
+dark #252931
+maxdark #181a1f
+*/
+
+p,
+.home-top__intro-boxes a {
+  color: #f9fcfa;
+}
+
+body {
+  background: #181a1f;
+  margin: 0px 0px;
+  font-family: Futura, Tahoma, Verdana, sans-serif;
+  display: grid;
+}
+
+nav {
+  background-color: #181a1f;
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+}
+
+nav ul a {
+  font-size: 24px;
+}
+
+nav li {
+  color: #f9fcfa;
+  display: inline-block;
+  padding: 30px;
+  float: right;
+}
+
+.nav-btn:hover {
+  color: #707070;
+}
+
+main {
+  background-image: url("/images/icons/create-account-logo-big-glass.png");
+  min-height: 100vh;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center 0px;
+}
+
+/* SECTION CTAS */
+.ctas {
+  position: relative;
+  min-height: 55vh;
+}
+
+h2 {
+  display: none;
+}
+
+.create-account-cta-container {
+  position: relative;
+  left: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 900px;
+  margin: 420px auto;
+  gap: 90px;
+}
+
+.btn-watcher {
+  background: #395ea9;
+  padding: 80px 115px;
+}
+
+.btn-film-maker {
+  background: #8e2c1e;
+  padding: 80px 115px;
+}
+
+.arrow-down {
+  position: relative;
+  text-align: center;
+  margin: -200px auto;
+}
+
+.join {
+  display: none;
+}
+/* SECTION ADVANTAGES */
+.advantages {
+  position: relative;
+  background-image: url("/images/inspiration-images/felix-mooneeram-edited-reduced.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -100px;
+  min-height: 80vh;
+  width: 100%;
+}
+
+.arrow-down img {
+  position: relative;
+  top: 10px;
+  width: 50px;
+}
+
+.advantages h2 {
+  display: none;
+}
+
+.advantages__container {
+  position: relative;
+  top: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
+
+footer {
+  background: yellow;
+}
