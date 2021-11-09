@@ -15,3 +15,18 @@
 ### Comments
 
 - My initial prototype includes horizontal scrolling carroussels, so I am still unable to replicated it with just basic HTML and CSS. As a result, I have changed the look and feel of some sections of the mobile size.
+
+---
+
+MJ's feedback:
+
+☐ Pictures: max 200kb
+☐ Fix horizontal scrollbar on the big screen: .award-winning-films h2 {left: 35px}
+☐ Fix horizontal scrollbar on the small screen:
+☐ Each page needs one unique h1
+☐ Get rid of the <b> tags and make a <span> and style the span.
+☐ Images without alt?
+☐ The awesome play circle has a space in the file name
+☐ CSS: new-releases-section-grid: margin auto is repeated, and display grid as well
+
+---
