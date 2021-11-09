@@ -151,6 +151,13 @@ header {
   opacity: 50%;
 }
 
+.create-my-account h2 {
+  display: none;
+}
+
+.create-my-account-m h2 {
+  display: none;
+}
 /* CREATE ACCOUNT MOBILE*/
 
 .create-my-account-m {
