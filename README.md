@@ -24,8 +24,8 @@ MJ's feedback:
 ☐ Fix horizontal scrollbar on the big screen: .award-winning-films h2 {left: 35px}
 ☐ Fix horizontal scrollbar on the small screen:
 ☐ Each page needs one unique h1
-☐ Get rid of the <b> tags and make a <span> and style the span.
-☐ Images without alt?
+☐ Get rid of the <b> tags and make them either <span> or <strong> or <em>.
+☐ Missing alt on logo
 ☐ The awesome play circle has a space in the file name
 ☐ CSS: new-releases-section-grid: margin auto is repeated, and display grid as well
 

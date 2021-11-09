@@ -66,6 +66,8 @@ header {
   background: #181a1f;
 }
 
+
+
 /* HOME */
 
 /* MAIN LOGO AND WELCOME CARDS */
@@ -86,6 +88,10 @@ header {
   width: 60px;
 }
 
+.home-top h1 {
+  display: none;
+}
+
 .home-top__intro-boxes-container {
   display: grid;
   max-width: 1000px;
@@ -104,6 +110,7 @@ header {
 .box3 {
   padding-top: 40px;
 }
+
 
 /* CREATE ACCOUNT */
 
@@ -575,8 +582,6 @@ footer {
 
   .new-releases-section__grid {
     width: 70%;
-    margin: auto;
-    display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
     gap: 30px;
