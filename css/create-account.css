@@ -38,10 +38,6 @@ nav li {
   float: right;
 }
 
-.nav-btn:hover {
-  color: #707070;
-}
-
 main {
   background-image: url("/images/icons/create-account-logo-big-glass.png");
   min-height: 100vh;
@@ -66,18 +62,27 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 900px;
-  margin: 420px auto;
+  margin: 410px auto;
   gap: 90px;
 }
 
 .btn-watcher {
   background: #395ea9;
-  padding: 80px 115px;
+  padding: 70px 60px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.btn-watcher:hover,
+.btn-film-maker:hover {
+  border: 10px solid;
 }
 
 .btn-film-maker {
   background: #8e2c1e;
-  padding: 80px 115px;
+  padding: 70px 40px;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .arrow-down {
@@ -120,4 +125,5 @@ h2 {
 
 footer {
   background: yellow;
+  display: none;
 }
