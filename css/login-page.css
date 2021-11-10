@@ -92,6 +92,14 @@ main {
   border: 5px solid #f9fcfa;
 }
 
+.forgot-password {
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: normal;
+}
+
 .decorative-background {
   background-image: url("/images/inspiration-images/felix-mooneeram-edited-reduced-2.png");
   background-repeat: no-repeat;
