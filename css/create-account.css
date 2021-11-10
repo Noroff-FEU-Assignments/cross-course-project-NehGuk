@@ -20,22 +20,42 @@ body {
 }
 
 nav {
-  background-color: #181a1f;
-  z-index: 2;
+  background: #181a1f;
   position: fixed;
   width: 100%;
-  top: 0px;
+  z-index: 10;
 }
 
-nav ul a {
-  font-size: 24px;
+nav img {
+  width: 180px;
+  padding: 20px;
+}
+
+nav ul {
+  position: relative;
+  float: right;
+  padding: 20px;
+  color: #f9fcfa;
 }
 
 nav li {
-  color: #f9fcfa;
   display: inline-block;
-  padding: 30px;
-  float: right;
+  padding: 0px 30px;
+  font-size: 24px;
+  list-style-type: none;
+}
+
+.nav-btn:visited {
+  text-decoration: none;
+  color: #f9fcfa;
+}
+
+.nav-btn:hover {
+  color: #707070;
+}
+
+h1 {
+  display: none;
 }
 
 main {
@@ -97,10 +117,10 @@ h2 {
 /* SECTION ADVANTAGES */
 .advantages {
   position: relative;
-  background-image: url("/images/inspiration-images/felix-mooneeram-edited-reduced.jpg");
+  background-image: url("/images/inspiration-images/felix-mooneeram-edited-reduced-3.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0px -100px;
+  background-position: 0px 0px;
   min-height: 80vh;
   width: 100%;
 }
