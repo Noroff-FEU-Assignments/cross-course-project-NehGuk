@@ -145,6 +145,9 @@ nav li {
 
 .my-favourites-container .film1 {
   grid-area: film1;
+}
+
+.my-favourites-container .film1 img {
   object-fit: fill;
 }
 
