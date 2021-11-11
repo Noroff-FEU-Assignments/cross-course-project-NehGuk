@@ -160,9 +160,9 @@ nav li {
 }
 
 .my-favourites-container img {
-  width: 200px;
-  height: 300px;
-  object-fit: fill;
+  width: 100%;
+
+  object-fit: cover;
 }
 
 @media only screen and (max-width: 650px) {
