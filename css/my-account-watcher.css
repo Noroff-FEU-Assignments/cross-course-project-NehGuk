@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #252931;
   margin: 0px;
@@ -6,12 +10,13 @@ body {
   position: relative;
 }
 
-/* HEADER */
+/* NAV */
 
 nav {
   background: #252931;
   position: fixed;
   width: 100%;
+  z-index: 10;
 }
 
 nav img {
@@ -75,6 +80,7 @@ nav a {
 
 .my-account-container .title h1 {
   color: #395ea9;
+  font-size: 36px;
 }
 
 .my-account-container .picture {
@@ -111,9 +117,14 @@ nav a {
   text-decoration: underline;
 }
 
+.my-account-container .edit p:hover {
+  opacity: 70%;
+}
+
 .my-account-container .arrow {
   grid-area: arrow;
   text-align: center;
+  padding-bottom: 10px;
 }
 
 .my-account-container .arrow img {
@@ -132,13 +143,14 @@ nav a {
   width: 80%;
   margin: 0 auto;
   padding-top: 50px;
+  padding-bottom: 100px;
   grid-template-areas:
     "title title title title"
     "film1 film2 film3 film4 ";
 }
 
 .my-favourites-container .grid-item {
-  background: cornflowerblue;
+  /* background: cornflowerblue; */
   background-size: cover;
   max-width: 100%;
 }
@@ -169,26 +181,57 @@ nav a {
   object-fit: cover;
 }
 
+/* DELETE MY ACCOUNT */
+.delete-my-account {
+  background: #181a1f;
+}
+
+.delete-my-account p {
+  text-align: center;
+  text-decoration: underline;
+  padding-bottom: 50px;
+  margin: 0px;
+}
+
+.delete-my-account p:hover {
+  opacity: 70%;
+}
+
+/* FOOTER */
+.logo-footer {
+  text-align: center;
+  background: #000;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.logo-footer img {
+  width: 200px;
+}
+
 @media only screen and (max-width: 650px) {
+  /* NAV */
   nav ul {
     display: none;
   }
 
-  .form {
-    width: 70%;
-    padding: 0%;
-    margin-left: 20px;
+  /* MY ACCOUNT */
+  .my-account-container {
+    width: 100%;
   }
 
-  .form__input {
-    padding: 10px 60px;
+  .my-account-container .picture img {
+    width: 150px;
+    height: 150px;
   }
 
-  .cta-join-now {
-    padding: 20px 93px;
-  }
-
-  .decorative-background {
-    display: none;
+  /* MY FAVOURITES */
+  .my-favourites-container {
+    gap: 10px;
+    width: 80%;
+    grid-template-areas:
+      "title title"
+      "film1 film2"
+      "film3 film4";
   }
 }
