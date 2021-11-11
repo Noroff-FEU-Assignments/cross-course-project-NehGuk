@@ -26,6 +26,10 @@ nav ul a {
   font-size: 24px;
 }
 
+nav a {
+  text-decoration: none;
+}
+
 nav li {
   color: #f9fcfa;
   display: inline-block;

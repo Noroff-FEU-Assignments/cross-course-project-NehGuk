@@ -45,6 +45,10 @@ nav li {
   list-style-type: none;
 }
 
+nav a {
+  text-decoration: none;
+}
+
 .nav-btn:visited {
   text-decoration: none;
   color: #f9fcfa;
