@@ -148,7 +148,7 @@ nav li {
 }
 
 .my-favourites-container .film1 img {
-  object-fit: fill;
+  object-fit: contain;
 }
 
 .my-favourites-container .film2 {
