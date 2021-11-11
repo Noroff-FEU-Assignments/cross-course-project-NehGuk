@@ -181,6 +181,10 @@ nav a {
   object-fit: cover;
 }
 
+.my-favourites-container img:hover {
+  opacity: 50%;
+}
+
 /* DELETE MY ACCOUNT */
 .delete-my-account {
   background: #181a1f;
