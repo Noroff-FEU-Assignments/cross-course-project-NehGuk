@@ -78,6 +78,112 @@ nav a {
 
 /* MAIN */
 
+/* FEATURED */
+
+.featured {
+  background: #252931;
+}
+
+.featured-container {
+  display: grid;
+  gap: 0px;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 150px;
+  grid-template-areas:
+    "arrow-left title title arrow-right"
+    "arrow-left title title arrow-right"
+    "arrow-left picture picture arrow-right"
+    "arrow-left film-title stars arrow-right"
+    "arrow-left details stars arrow-right";
+}
+
+.featured-container .grid-item {
+  /* background: cornflowerblue; */
+  background-size: cover;
+  max-width: 100%;
+}
+
+.featured-container .title {
+  grid-area: title;
+  margin-top: 200px;
+  margin-top: 0px;
+}
+
+.featured-container .picture {
+  grid-area: picture;
+}
+
+.featured-container .film-title {
+  grid-area: film-title;
+  background: #181a1f;
+  padding: 30px 0 30px 30px;
+}
+
+.featured-container .film-title h3 {
+  font-size: 30px;
+  margin: 0;
+}
+
+.featured-container .details {
+  grid-area: details;
+  background: #181a1f;
+  padding: 0 0 10px 30px;
+}
+
+.details__breadcrumbs,
+.details strong {
+  opacity: 70%;
+}
+
+.featured-container .stars {
+  grid-area: stars;
+  text-align: right;
+  background: #181a1f;
+  padding: 30px 30px 0 0;
+}
+
+.featured-container .arrow-left {
+  grid-area: arrow-left;
+}
+
+.featured-container .arrow-right {
+  grid-area: arrow-right;
+}
+
+.featured-container img {
+  width: 100%;
+  height: 100%;
+  /*   object-fit: cover; */
+}
+
+.stars img {
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+}
+
+.arrow-left img {
+  width: 90px;
+  height: 90px;
+  position: relative;
+  top: 40%;
+}
+
+.arrow-right img {
+  width: 90px;
+  height: 90px;
+  position: relative;
+  top: 39%;
+}
+
+.featured-container img:hover {
+  opacity: 50%;
+}
+
+.arrow-left img {
+}
+
 /* NEW RELEASES */
 
 .new-releases {
@@ -90,6 +196,7 @@ nav a {
   width: 60%;
   margin: 0 auto;
   padding-top: 50px;
+  margin-top: 0px;
   padding-bottom: 100px;
   grid-template-areas:
     "title title title"
@@ -105,7 +212,6 @@ nav a {
 
 .new-releases-container .title {
   grid-area: title;
-  margin-top: 200px;
 }
 
 .new-releases-container .film1 {
@@ -380,6 +486,41 @@ nav a {
 }
 
 @media only screen and (max-width: 850px) {
+  .featured-container {
+    width: 80%;
+
+    grid-template-areas:
+      "title title"
+      "picture picture"
+      "film-title film-title"
+      "stars stars"
+      "details details";
+  }
+
+  .featured-container .arrow-left {
+    display: none;
+  }
+
+  .featured-container .arrow-right {
+    display: none;
+  }
+
+  .featured-container .stars {
+    text-align: left;
+    background: #181a1f;
+    padding: 0 0 0 30px;
+  }
+
+  .stars img {
+    width: 40px;
+    height: 40px;
+    padding: 2px;
+  }
+
+  .new-releases-container {
+    width: 80%;
+  }
+
   .top-rated-container {
     gap: 10px;
     width: 80%;
@@ -398,8 +539,8 @@ nav a {
   }
 
   .film-makers-container img {
-    width: 150px;
-    height: 150px;
+    width: 110px;
+    height: 110px;
   }
 
   .categories-container {
@@ -411,7 +552,6 @@ nav a {
   .categories a {
     font-size: 14px;
     padding: 10px 30px;
-
     margin-right: 7px;
   }
 }
