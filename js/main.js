@@ -1,1 +1,0 @@
-/* testing comments on JS */
