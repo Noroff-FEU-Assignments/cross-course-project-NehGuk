@@ -1,98 +1,162 @@
-* {
-  box-sizing: border-box;
+.nav-logo img {
+  max-width: 120px;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.navbar {
-  display: flex;
+.home-header {
   position: relative;
+  width: 100%;
+  padding: 2em 0em;
+  margin: 0 auto;
+}
+
+.nav-container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 2em;
+  margin: 0 auto;
+  /* background: rgb(92, 97, 81); */
+}
+
+.main-navigation {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
-  color: white;
 }
 
-.brand-title {
-  font-size: 1.5rem;
-  margin: 0.5rem;
-}
-
-.navbar-links {
-  height: 100%;
-}
-
-.navbar-links ul {
+.primary-nav {
   display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar-links li {
-  list-style: none;
-}
-
-.navbar-links li a {
-  display: block;
-  text-decoration: none;
-  color: white;
-  padding: 1rem;
-}
-
-.navbar-links li:hover {
-  background-color: #555;
-}
-
-.toggle-button {
-  position: absolute;
-  top: 0.75rem;
-  right: 1rem;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 21px;
-}
-
-.toggle-button .bar {
-  height: 3px;
   width: 100%;
-  background-color: white;
-  border-radius: 10px;
+  justify-content: end;
+  gap: 3em;
 }
 
-@media (max-width: 650px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
+.secondary-nav {
+  display: flex;
+  width: 60%;
+  justify-content: end;
+  gap: 2em;
+  align-items: center;
+}
+
+.secondary-nav img {
+  width: 1.2em;
+}
+
+#hamburger-checkbox {
+  display: none;
+}
+
+#hamburger-checkbox:checked ~ nav {
+  display: block;
+}
+
+.main-navigation label {
+  font-size: 31px;
+  font-weight: 900;
+  display: none;
+}
+
+@media (min-width: 1441px) {
+  section {
+    padding: 8em 0;
+    margin: 0;
   }
 
-  .toggle-button {
-    display: flex;
+  /* ############### Navigation ###############  (min-width: 1441px)*/
+
+  .primary-nav {
+    width: 60%;
   }
 
-  .navbar-links {
-    display: none;
+  .secondary-nav {
+    width: 20%;
+  }
+
+  /* ############### Home Page ############### (min-width: 1441px)*/
+
+  /* <<<------------------ Home Page Hero Section (min-width: 1441px) ---------------->>> */
+
+  .home-grid-container {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    align-items: center;
+  }
+
+  .hero-content {
+    grid-column: 1 / 5;
     width: 100%;
   }
 
-  .navbar-links ul {
+  .hero-img {
+    background-position-x: center;
+    grid-column: 6 / 12;
+    grid-row: 4/ 6;
+    height: 700px;
+    /* width: 100%; */
+  }
+
+  /* <<<------------------ Home Page Banner Section (min-width: 1441px) ---------------->>> */
+
+  .banner-section {
+    background-position-x: center;
+    padding: 300px 0;
+  }
+
+  /* <<<------------------ Home Page Instagram Feed Section (min-width: 1441px) ---------------->>> */
+
+  .instagram-feed {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2em;
+    align-items: center;
+    margin: 2em 0;
+  }
+
+  .instagram-img img {
     width: 100%;
-    flex-direction: column;
   }
 
-  .navbar-links ul li {
-    text-align: center;
+  /* ############### Shop Page ############### (min-width: 1441px)*/
+
+  /* <<<------------------ Shop Page Hero Section (min-width: 1441px) ---------------->>> */
+
+  section.hero-banner {
+    height: 30vh;
   }
 
-  .navbar-links ul li a {
-    padding: 0.5rem 1rem;
+  /* ###############================ Product Page ================############### (min-width: 1441px) */
+
+  /* <<<------------------ Product Page Hero Section ---------------->>> (min-width: 1441px) */
+  .product-page-cta a {
+    padding: 1.2em 7.2em;
   }
 
-  .navbar-links.active {
-    display: flex;
+  /* ###############================ Contact Page ================############### (min-width: 1441px) */
+
+  /* <<<------------------ Contact Page Page Hero Section ---------------->>> (min-width: 1441px) */
+  section.hero-banner.has-background {
+    min-height: 30vh;
+  }
+
+  /* <<<------------------ Contact Map Section ---------------->>> (min-width: 1441px)*/
+
+  .container.cards-wrapper {
+    padding: 8em 2em 2em;
+  }
+
+  /* ############### Bag Detail Page ############### (max-width: 486px)*/
+
+  /* <<<------------------ Bag Detail Hero Section ---------------->>> (max-width: 486px)*/
+
+  .bag-detail-img {
+    width: 200px;
   }
 }

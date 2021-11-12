@@ -47,6 +47,21 @@ nav a {
   text-decoration: none;
 }
 
+.form-wrapper {
+  display: inline;
+}
+
+.search-box {
+  width: 150px;
+  height: 35px;
+}
+
+.search-box-icon {
+  width: 25px;
+  position: relative;
+  top: 7px;
+}
+
 .nav-btn:visited {
   text-decoration: none;
   color: #f9fcfa;
@@ -58,6 +73,7 @@ nav a {
 
 #active {
   color: #395ea9;
+  font-weight: bold;
 }
 
 .menu #cat {
@@ -226,7 +242,7 @@ nav a {
   width: 200px;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 895px) {
   /* NAV */
   nav li {
     font-size: 12px;
@@ -241,6 +257,10 @@ nav a {
   }
 
   nav .logo-mini {
+    display: none;
+  }
+
+  .search-box {
     display: none;
   }
 }
