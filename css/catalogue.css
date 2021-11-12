@@ -87,7 +87,7 @@ nav a {
 .new-releases-container {
   display: grid;
   gap: 20px;
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
   padding-top: 50px;
   padding-bottom: 100px;
@@ -151,7 +151,7 @@ nav a {
 .top-rated-container {
   display: grid;
   gap: 20px;
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
   padding-top: 50px;
   padding-bottom: 100px;
@@ -206,7 +206,7 @@ nav a {
 .film-makers-container {
   display: grid;
   gap: 20px;
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
   padding-top: 50px;
   padding-bottom: 100px;
@@ -281,13 +281,13 @@ nav a {
 .categories-container {
   display: grid;
   gap: 20px;
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
   padding-top: 50px;
   padding-bottom: 100px;
   grid-template-areas:
-    "title"
-    "categories";
+    "title title"
+    "categories white-space";
 }
 
 .categories-container .grid-item {
@@ -302,6 +302,10 @@ nav a {
 
 .categories-container .categories {
   grid-area: categories;
+}
+
+.categories-container .white-space {
+  grid-area: white-space;
 }
 
 .categories a {
@@ -352,7 +356,7 @@ nav a {
   width: 200px;
 }
 
-@media only screen and (max-width: 895px) {
+@media only screen and (max-width: 910px) {
   /* NAV */
   nav li {
     font-size: 12px;
@@ -375,8 +379,7 @@ nav a {
   }
 }
 
-@media only screen and (max-width: 650px) {
-  /* MY FAVOURITES */
+@media only screen and (max-width: 850px) {
   .top-rated-container {
     gap: 10px;
     width: 80%;
@@ -397,6 +400,19 @@ nav a {
   .film-makers-container img {
     width: 150px;
     height: 150px;
+  }
+
+  .categories-container {
+    grid-template-areas:
+      "title title title"
+      "categories categories categories";
+  }
+
+  .categories a {
+    font-size: 14px;
+    padding: 10px 30px;
+
+    margin-right: 7px;
   }
 }
 
