@@ -176,6 +176,7 @@ nav a {
 
 .featured-container .price p {
   margin-top: -5px;
+  padding-left: 30px;
 }
 
 .featured-container .cta {
@@ -188,11 +189,12 @@ nav a {
   color: #f9fcfa;
   border: none;
   cursor: pointer;
-  width: 90%;
+  width: 80%;
   height: 60px;
   font-size: 26px;
   font-weight: bold;
   margin-top: 20px;
+  margin-left: 30px;
 }
 
 .featured-container .cta button:hover {
@@ -245,14 +247,16 @@ nav a {
 
 @media only screen and (max-width: 850px) {
   .featured-container {
-    width: 80%;
-
+    width: 90%;
     grid-template-areas:
       "title title"
       "picture picture"
       "film-title film-title"
+      "cta cta"
+      "price price"
       "stars stars"
-      "details details";
+      "details details"
+      "synopsis synopsis";
   }
 
   .featured-container .arrow-left {
@@ -273,6 +277,14 @@ nav a {
     width: 40px;
     height: 40px;
     padding: 2px;
+  }
+
+  .featured-container .synopsis p {
+    max-width: 90%;
+  }
+
+  .featured-container .cta button {
+    margin-top: -10px;
   }
 }
 
