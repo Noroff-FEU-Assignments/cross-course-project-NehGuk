@@ -73,95 +73,82 @@ nav a {
 
 #active {
   color: #833325;
+  font-weight: bold;
 }
 
 /* MAIN */
 
-/* MAIN MY ACCOUNT CONTAINER */
+/* NEW RELEASES */
 
-.my-account-container {
+.new-releases {
+  background: #252931;
+}
+
+.new-releases-container {
   display: grid;
-  width: 600px;
-  margin: 0 auto;
-  padding-top: 120px;
   gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 100px;
   grid-template-areas:
-    "title title "
-    "picture picture"
-    "info data "
-    "edit edit "
-    "arrow arrow ";
+    "title title title"
+    "film1 film2 film3"
+    "film4 film5 film6";
 }
 
-.my-account-container .grid-item {
+.new-releases-container .grid-item {
   /* background: cornflowerblue; */
+  background-size: cover;
+  max-width: 100%;
 }
 
-.my-account-container .title {
+.new-releases-container .title {
   grid-area: title;
-  text-align: center;
+  margin-top: 200px;
 }
 
-.my-account-container .title h1 {
-  color: #833325;
-  font-size: 36px;
+.new-releases-container .film1 {
+  grid-area: film1;
 }
 
-.my-account-container .picture {
-  grid-area: picture;
-  text-align: center;
+.new-releases-container .film2 {
+  grid-area: film2;
 }
 
-.my-account-container .picture img {
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
+.new-releases-container .film3 {
+  grid-area: film3;
+}
+
+.new-releases-container .film4 {
+  grid-area: film4;
+}
+
+.new-releases-container .film5 {
+  grid-area: film5;
+}
+
+.new-releases-container .film6 {
+  grid-area: film6;
+}
+
+.new-releases-container img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
-.my-account-container .info {
-  grid-area: info;
-  text-align: right;
+.new-releases-container img:hover {
+  opacity: 50%;
 }
 
-.my-account-container .info p {
-  opacity: 60%;
-}
+/* TOP RATED */
 
-.my-account-container .data {
-  grid-area: data;
-}
-
-.my-account-container .edit {
-  grid-area: edit;
-  text-align: center;
-}
-
-.my-account-container .edit p {
-  text-decoration: underline;
-}
-
-.my-account-container .edit p:hover {
-  opacity: 70%;
-}
-
-.my-account-container .arrow {
-  grid-area: arrow;
-  text-align: center;
-  padding-bottom: 10px;
-}
-
-.my-account-container .arrow img {
-  width: 30px;
-}
-
-/* MY FAVOURITES */
-
-.my-favourites {
+.top-rated {
   background: #181a1f;
 }
 
-.my-favourites-container {
+.top-rated-container {
   display: grid;
   gap: 20px;
   width: 80%;
@@ -173,40 +160,162 @@ nav a {
     "film1 film2 film3 film4 ";
 }
 
-.my-favourites-container .grid-item {
+.top-rated-container .grid-item {
   /* background: cornflowerblue; */
   background-size: cover;
   max-width: 100%;
 }
 
-.my-favourites-container .title {
+.top-rated-container .title {
   grid-area: title;
+  /* margin-top: 200px; */
 }
 
-.my-favourites-container .film1 {
+.top-rated-container .film1 {
   grid-area: film1;
 }
 
-.my-favourites-container .film2 {
+.top-rated-container .film2 {
   grid-area: film2;
 }
 
-.my-favourites-container .film3 {
+.top-rated-container .film3 {
   grid-area: film3;
 }
 
-.my-favourites-container .film4 {
+.top-rated-container .film4 {
   grid-area: film4;
 }
 
-.my-favourites-container img {
+.top-rated-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.my-favourites-container img:hover {
+.top-rated-container img:hover {
   opacity: 50%;
+}
+
+/* FILM MAKERS */
+
+.film-makers {
+  background: #252931;
+}
+
+.film-makers-container {
+  display: grid;
+  gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  grid-template-areas:
+    "title title title"
+    "film-maker1 film-maker2 film-maker3"
+    "film-maker4 film-maker5 film-maker6";
+}
+
+.film-makers-container .grid-item {
+  /*  background: cornflowerblue; */
+  background-size: cover;
+  max-width: 100%;
+}
+
+.film-makers-container .title {
+  grid-area: title;
+}
+
+.film-makers-container .film-maker1 {
+  grid-area: film-maker1;
+}
+
+.film-makers-container .film-maker2 {
+  grid-area: film-maker2;
+}
+
+.film-makers-container .film-maker3 {
+  grid-area: film-maker3;
+}
+
+.film-makers-container .film-maker4 {
+  grid-area: film-maker4;
+}
+
+.film-makers-container .film-maker5 {
+  grid-area: film-maker5;
+}
+
+.film-makers-container .film-maker6 {
+  grid-area: film-maker6;
+}
+
+.film-makers-container img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.film-makers-container img:hover {
+  opacity: 50%;
+}
+
+.film-makers h3 {
+  padding-left: 15px;
+}
+
+.film-makers p {
+  /* padding-top: -30px; */
+  margin-top: -15px;
+  padding-left: 15px;
+  color: #707070;
+}
+
+/* CATEGORIES */
+
+.categories {
+  background: #252931;
+}
+
+.categories-container {
+  display: grid;
+  gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  grid-template-areas:
+    "title"
+    "categories";
+}
+
+.categories-container .grid-item {
+  /* background: cornflowerblue; */
+  background-size: cover;
+  max-width: 100%;
+}
+
+.categories-container .title {
+  grid-area: title;
+}
+
+.categories-container .categories {
+  grid-area: categories;
+}
+
+.categories a {
+  background: #395ea9;
+  display: inline-block;
+  border-radius: 20px;
+  padding: 10px 40px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+.categories a:hover {
+  background: #f9fcfa;
+  color: #395ea9;
 }
 
 /* UPLOAD */
@@ -229,22 +338,6 @@ nav a {
   background: #f9fcfa;
   /* border: 5px solid #833325; */
   color: #833325;
-}
-
-/* DELETE MY ACCOUNT */
-.delete-my-account {
-  background: #181a1f;
-}
-
-.delete-my-account p {
-  text-align: center;
-  text-decoration: underline;
-  padding-bottom: 50px;
-  margin: 0px;
-}
-
-.delete-my-account p:hover {
-  opacity: 70%;
 }
 
 /* FOOTER */
@@ -283,24 +376,27 @@ nav a {
 }
 
 @media only screen and (max-width: 650px) {
-  /* MY ACCOUNT */
-  .my-account-container {
-    width: 100%;
-  }
-
-  .my-account-container .picture img {
-    width: 150px;
-    height: 150px;
-  }
-
   /* MY FAVOURITES */
-  .my-favourites-container {
+  .top-rated-container {
     gap: 10px;
     width: 80%;
     grid-template-areas:
       "title title"
       "film1 film2"
       "film3 film4";
+  }
+
+  .film-makers-container {
+    grid-template-areas:
+      "title title"
+      "film-maker1 film-maker2"
+      "film-maker3 film-maker4"
+      "film-maker5 film-maker6";
+  }
+
+  .film-makers-container img {
+    width: 150px;
+    height: 150px;
   }
 }
 

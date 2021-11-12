@@ -6,86 +6,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="This is the SquareEyes introduction page, where you can learn about the service and create an account." />
     <link rel="stylesheet" href="https://use.typekit.net/rif0eeq.css">
-    <link rel="stylesheet" href="/css/my-account-film-maker.css">
+    <link rel="stylesheet" href="/css/catalogue.css">
   </head>
   <body>
     <nav>
       <a href="index.html"><img src="/images/logo/logo-red-no-slogan.png" class="logo-mini" alt="Blue and white logo of the SquareEyes service"></a>
       <a href="index.html"><img src="/images/logo/logo-mini.png" class="logo-mini-m" alt="Blue and white logo of the SquareEyes service"></a>
       <ul>
-        <li><a href="login-page.html" class="nav-btn">Catalogue</a></li>
-        <li><a href="login-page.html" class="nav-btn" id="active">My account</a></li>
+        <li><a href="#" class="nav-btn" id="active">Catalogue</a></li>
+        <li><a href="/my-account-film-maker.html" class="nav-btn">My account</a></li>
         <li><a href="index.html" class="nav-btn">Logout</a></li>
-        <!-- <li><a href="login-page.html" class="nav-btn">Search</a></li> -->
         <form class="form-wrapper">
           <input type="search" name="search" id="search" class="search-box">
         <label for="search"><img src="images/icons/white-search.png" class="search-box-icon"></label>
         </form>
-        
       </ul>
     </nav>      
     
     <main>
-      <section class="my-account-container">
-        <header class="grid-item title">
-          <h1>My account</h1>
-        </header>
-        <div class="grid-item picture">
-          <img src="/images/filmmakers/hungary.jpg">
-        </div>
-        <div class="grid-item info">
-          <p>Name</p>
-          <p>Email</p>
-          <p>Password</p>
-          <p>Country</p>
-          <p>Account type</p>
-          <p>Payment method</p>
-        </div>
-        <div class="grid-item data">
-          <p>Henri Kug</p>
-          <p>henri@protonmail.br</p>
-          <p>**********</p>
-          <p>Vanatu</p>
-          <p>Film maker</p>
-          <p>Visa **** 3487</p>
-        </div>
-        <div class="grid-item edit" id="my-favourites-scroll-hack">
-          <p>Edit my information</p>
-        </div>
-        <div class="grid-item arrow">
-          <a href="#my-favourites-scroll-hack"><img src="/images/icons/arrow-down-red.png"></a>
-        </div>
-      </section>
-      <section class="my-favourites" >
-        <div class="my-favourites-container">
-          <div class="grid-item title">
-            <h2>My uploads</h2>
-          </div>
-          <div class="grid-item film1">
-            <img src="/images/film-posters-top/top-film1.jpg">
-          </div>
-          <div class="grid-item film2">
-            <img src="/images/film-posters-top/top-film2.jpg">
-          </div>
-          <div class="grid-item film3">
-            <img src="/images/film-posters-top/top-film3.jpg">
-          </div>
-          <div class="grid-item film4">
-            <img src="/images/film-posters-top/top-film4.jpg">
-          </div>
-        </div>
-      </section>
-      <section class="upload">
-        <a class="upload__cta">Upload new film</a>
-      </section>
+<!-- FEATURED -->
 
 
 
 
-      <section class="delete-my-account">
-        <p>Delete my account</p>
-      </section>
+<!-- NEW RELEASES -->
+<section class="new-releases" >
+  <div class="new-releases-container">
+    <div class="grid-item title">
+      <h2>New releases</h2>
+    </div>
+    <div class="grid-item film1">
+      <img src="/images/film-posters-top/top-film1.jpg">
+    </div>
+    <div class="grid-item film2">
+      <img src="/images/film-posters-top/top-film2.jpg">
+    </div>
+    <div class="grid-item film3">
+      <img src="/images/film-posters-top/top-film3.jpg">
+    </div>
+    <div class="grid-item film4">
+      <img src="/images/film-posters-top/top-film4.jpg">
+    </div>
+    <div class="grid-item film5">
+      <img src="/images/film-posters-top/top-film5.jpg">
+    </div>
+    <div class="grid-item film6">
+      <img src="/images/film-posters-top/top-film6.jpg">
+    </div>
+  </div>
+</section>
 
+
+
+<!-- TOP RATED -->
+<section class="top-rated" >
+  <div class="top-rated-container">
+    <div class="grid-item title">
+      <h2>Top rated</h2>
+    </div>
+    <div class="grid-item film1">
+      <img src="/images/film-posters-top/top-film1.jpg">
+    </div>
+    <div class="grid-item film2">
+      <img src="/images/film-posters-top/top-film2.jpg">
+    </div>
+    <div class="grid-item film3">
+      <img src="/images/film-posters-top/top-film3.jpg">
+    </div>
+    <div class="grid-item film4">
+      <img src="/images/film-posters-top/top-film4.jpg">
+    </div>
+  </div>
+</section>
+<section class="upload">
+  <a class="upload__cta">Upload new film</a>
+</section>
+
+<!-- FILM MAKERS -->
+<section class="film-makers" >
+  <div class="film-makers-container">
+    <div class="grid-item title">
+      <h2>Film makers</h2>
+    </div>
+    <div class="grid-item film-maker1">
+      <img src="/images/filmmakers/hungary.jpg">
+      <h3>Ana Bela</h3>
+      <p>Hungary</p>
+    </div>
+    <div class="grid-item film-maker2">
+      <img src="/images/filmmakers/canada.jpg">
+      <h3>Robert Matos</h3>
+      <p>Canada</p>
+    </div>
+    <div class="grid-item film-maker3">
+      <img src="/images/filmmakers/brazil.jpg">
+      <h3>Txai Aquino</h3>
+      <p>Brazil</p>
+    </div>
+    <div class="grid-item film-maker4">
+      <img src="/images/filmmakers/ireland.jpg">
+      <h3>Joan Russel</h3>
+      <p>Ireland</p>
+    </div>
+    <div class="grid-item film-maker5">
+      <img src="/images/filmmakers/japan.jpg">
+      <h3>Asuna Ueshiba</h3>
+      <p>Japan</p>
+    </div>
+    <div class="grid-item film-maker6">
+      <img src="/images/filmmakers/china.jpg">
+      <h3>Lang Yuxi</h3>
+      <p>China</p>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="categories" >
+  <div class="categories-container">
+    <div class="grid-item title">
+      <h2>Categories</h2>
+    </div>
+    <div class="grid-item categories">
+      <a>Animation</a>
+      <a>Experimental</a>
+      <a>Comedy</a>
+      <a>Romance</a>
+      <a>Documentary</a>
+      <a>Crime</a>
+      <a>SciFi</a>
+      <a>Western</a>
+      <a>Horror</a>
+      <a>Slice of life</a>
+      <a>Biographical</a>
+      <a>Fantasy</a>
+      <a>Misc</a>
+    </div>
+  </div>
+</section>
+
+  
 
 
       <footer>
