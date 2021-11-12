@@ -163,18 +163,14 @@ nav a {
   padding: 2px;
 }
 
-.arrow-left img {
-  width: 90px;
-  height: 90px;
+.arrow-left button {
   position: relative;
   top: 40%;
 }
 
-.arrow-right img {
-  width: 90px;
-  height: 90px;
+.arrow-right button {
   position: relative;
-  top: 39%;
+  top: 38%;
 }
 
 .featured-container img:hover {
@@ -462,6 +458,12 @@ nav a {
   width: 200px;
 }
 
+.button-arrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 910px) {
   /* NAV */
   nav li {
@@ -545,13 +547,13 @@ nav a {
 
   .categories-container {
     grid-template-areas:
-      "title title title"
-      "categories categories categories";
+      "title title"
+      "categories categories";
   }
 
   .categories a {
     font-size: 14px;
-    padding: 10px 30px;
+    padding: 10px 15px;
     margin-right: 7px;
   }
 }
