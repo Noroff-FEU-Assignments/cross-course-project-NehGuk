@@ -429,28 +429,6 @@ nav a {
   color: #395ea9;
 }
 
-/* UPLOAD */
-
-.upload {
-  background: #181a1f;
-  height: 100px;
-  text-align: center;
-}
-
-.upload a {
-  margin: 0px;
-  background: #833325;
-  font-size: 24px;
-  font-weight: bold;
-  padding: 10px 60px;
-}
-
-.upload__cta:hover {
-  background: #f9fcfa;
-  /* border: 5px solid #833325; */
-  color: #833325;
-}
-
 /* FOOTER */
 .logo-footer {
   text-align: center;
