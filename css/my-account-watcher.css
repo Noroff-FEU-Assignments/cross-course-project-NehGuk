@@ -294,8 +294,6 @@ nav a {
 
 @media only screen and (max-width: 356px) {
   nav .logo-mini-m {
-    display: block;
-    margin: 0 auto;
-    padding: 10px;
+    display: none;
   }
 }
