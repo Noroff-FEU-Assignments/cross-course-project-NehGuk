@@ -106,6 +106,7 @@ nav .cta:hover {
   background-image: url("/images/inspiration-images/create-my-account.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: top;
   height: 100vh;
   text-align: center;
   padding-top: 40px;
@@ -138,7 +139,7 @@ nav .cta:hover {
   color: #f9fcfa;
   text-decoration: underline;
   position: relative;
-  top: 300px;
+  top: 270px;
 }
 
 .create-account .terms:hover {

@@ -42,12 +42,12 @@ nav a {
   color: #f9fcfa;
 }
 
-.login-btn:visited {
+nav .login-btn:visited {
   text-decoration: none;
   color: #f9fcfa;
 }
 
-.login-btn:hover {
+nav .login-btn:hover {
   color: #707070;
 }
 
@@ -65,65 +65,49 @@ main {
 }
 
 /* FORM */
-.form {
-  /* background: yellow; */
-  padding: 30px;
-  width: 600px;
+
+.form-container {
+  margin-bottom: -100px;
+}
+
+.form-container form {
+  display: grid;
+  max-width: 600px;
   margin: 0 auto;
+  padding: 40px;
 }
 
 .form__input {
-  display: block;
-  padding: 10px 10px;
-  width: 600px;
-  border: none;
-  border-radius: 0%;
   margin-bottom: 15px;
+  height: 30px;
 }
 
 .cta-join-now {
+  margin-top: 20px;
   background: #395ea9;
-  padding: 20px 234px;
+  border: none;
+  height: 60px;
+  color: #f9fcfa;
   font-size: 28px;
   font-weight: bold;
-  color: white;
-  margin-top: 30px;
 }
 
 .cta-join-now:hover {
-  background: #252931;
-  border: 5px solid #f9fcfa;
+  background: #f9fcfa;
+  color: #395ea9;
 }
 
+/* FOOTER */
 .decorative-background {
   background-image: url("/images/inspiration-images/felix-mooneeram-edited-reduced-2.png");
-  background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0px -300px;
-  min-height: 400px;
-  margin-top: -20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
 }
 
 @media only screen and (max-width: 650px) {
   nav ul {
-    display: none;
-  }
-
-  .form {
-    width: 70%;
-    padding: 0%;
-    margin-left: 20px;
-  }
-
-  .form__input {
-    padding: 10px 60px;
-  }
-
-  .cta-join-now {
-    padding: 20px 93px;
-  }
-
-  .decorative-background {
     display: none;
   }
 }
