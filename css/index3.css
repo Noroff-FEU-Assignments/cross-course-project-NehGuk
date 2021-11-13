@@ -19,16 +19,6 @@ nav {
   z-index: 10;
 }
 
-nav .logo-mini-m {
-  display: none;
-  width: 50px;
-}
-
-nav .logo-mini {
-  width: 180px;
-  padding: 20px;
-}
-
 nav ul {
   position: relative;
   float: right;
@@ -47,21 +37,6 @@ nav a {
   text-decoration: none;
 }
 
-.form-wrapper {
-  display: inline;
-}
-
-.search-box {
-  width: 150px;
-  height: 35px;
-}
-
-.search-box-icon {
-  width: 25px;
-  position: relative;
-  top: 7px;
-}
-
 .nav-btn {
   text-decoration: none;
   color: #f9fcfa;
@@ -76,43 +51,17 @@ nav a {
   color: #707070;
 }
 
-#active {
-  color: #833325;
-  font-weight: bold;
+nav .cta {
+  background: #395ea9;
+  padding: 15px 40px;
+}
+
+nav .cta:hover {
+  background: #f9fcfa;
+  color: #395ea9;
 }
 
 /* MAIN */
-
-/* MAIN LOGO */
-
-.top-logo {
-  background: blue;
-  height: 70vh;
-}
-
-.top-logo img {
-  display: block;
-  position: relative;
-  top: 150px;
-  left: 100px;
-  width: 600px;
-}
-
-/* INTRO CARDS */
-
-.intro-cards-area {
-  background: purple;
-}
-
-.intro-card {
-  background: red;
-  display: inline-block;
-  padding: 20px 100px;
-}
-
-.cards-container {
-  text-align: center;
-}
 
 /* MAIN LOGO AND WELCOME CARDS */
 
@@ -125,11 +74,6 @@ nav a {
   position: relative;
   top: 150px;
   left: 300px;
-}
-
-.logo-mini {
-  padding: 10px;
-  width: 60px;
 }
 
 .home-top h1 {
@@ -157,6 +101,34 @@ nav a {
 }
 
 /* CREATE ACCOUNT */
+
+.create-account {
+  background-image: url("/images/inspiration-images/create-my-account.png");
+  background-size: cover;
+  height: 70vh;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.create-account a {
+  margin: 0px;
+  background: #833325;
+  color: #f9fcfa;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 20px 60px;
+}
+
+.create-account a:visited {
+  background: #833325;
+  color: #f9fcfa;
+}
+
+.create-account a:hover {
+  background: #f9fcfa;
+  color: #833325;
+}
 
 /* TOP RATED */
 
@@ -520,7 +492,7 @@ nav a {
   text-decoration: none;
   font-size: 24px;
   font-weight: bold;
-  padding: 10px 60px;
+  padding: 20px 60px;
 }
 
 .browse-our-catalogue a:visited {
@@ -549,29 +521,6 @@ nav a {
   background: none;
   border: none;
   cursor: pointer;
-}
-
-@media only screen and (max-width: 910px) {
-  /* NAV */
-  nav li {
-    font-size: 12px;
-    padding: 7px;
-  }
-
-  nav .logo-mini-m {
-    display: inline;
-    width: 50px;
-    padding-top: 35px;
-    padding-left: 5px;
-  }
-
-  nav .logo-mini {
-    display: none;
-  }
-
-  .search-box {
-    display: none;
-  }
 }
 
 @media only screen and (max-width: 850px) {
