@@ -105,6 +105,7 @@ nav .cta:hover {
 .create-account {
   background-image: url("/images/inspiration-images/create-my-account.png");
   background-size: cover;
+  background-repeat: no-repeat;
   height: 100vh;
   text-align: center;
   padding-top: 40px;
