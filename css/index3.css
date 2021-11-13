@@ -516,14 +516,20 @@ nav a {
 .browse-our-catalogue a {
   margin: 0px;
   background: #833325;
+  color: #f9fcfa;
+  text-decoration: none;
   font-size: 24px;
   font-weight: bold;
   padding: 10px 60px;
 }
 
+.browse-our-catalogue a:visited {
+  background: #833325;
+  color: #f9fcfa;
+}
+
 .browse-our-catalogue a:hover {
   background: #f9fcfa;
-  /* border: 5px solid #833325; */
   color: #833325;
 }
 
