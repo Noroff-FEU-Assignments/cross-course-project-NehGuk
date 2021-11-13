@@ -545,6 +545,8 @@ nav .cta:hover {
 
   .create-account {
     background-image: none;
+    height: 20vh;
+    margin-top: -120px;
   }
 
   .featured-container {
