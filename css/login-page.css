@@ -37,20 +37,18 @@ nav a {
   text-decoration: none;
 }
 
-.cta-sign-up {
-  background: #395ea9;
-  padding: 10px 40px;
-}
-
-.cta-sign-up:visited {
+.nav-btn {
   text-decoration: none;
   color: #f9fcfa;
 }
 
-.cta-sign-up:hover {
-  background: #252931;
+nav .login-btn:visited {
+  text-decoration: none;
   color: #f9fcfa;
-  border: solid #395ea9 4px;
+}
+
+nav .login-btn:hover {
+  color: #707070;
 }
 
 /* MAIN */
@@ -59,7 +57,7 @@ main {
   padding-top: 100px;
 }
 
-.welcome-back {
+.for-watchers {
   text-align: center;
   color: #395ea9;
   display: block;
@@ -67,72 +65,59 @@ main {
 }
 
 /* FORM */
-.form {
-  /* background: yellow; */
-  padding: 30px;
-  width: 600px;
+
+.form-container {
+  margin-bottom: -100px;
+}
+
+.form-container form {
+  display: grid;
+  max-width: 600px;
   margin: 0 auto;
+  padding: 40px;
 }
 
 .form__input {
-  display: block;
-  padding: 10px 200px;
-  border: none;
-  border-radius: 0%;
   margin-bottom: 15px;
+  height: 30px;
 }
 
-.cta-login {
+.cta-join-now {
+  margin-top: 20px;
   background: #395ea9;
-  padding: 20px 256px;
+  border: none;
+  height: 60px;
+  color: #f9fcfa;
   font-size: 28px;
   font-weight: bold;
-  color: white;
-  margin-top: 30px;
 }
 
-.cta-login:hover {
-  background: #252931;
-  border: 5px solid #f9fcfa;
+.cta-join-now:hover {
+  background: #f9fcfa;
+  color: #395ea9;
 }
 
 .forgot-password {
   text-align: center;
-  text-transform: uppercase;
+  margin-top: 30px;
   text-decoration: underline;
-  font-size: 14px;
-  font-weight: normal;
 }
 
+.forgot-password:hover {
+  opacity: 70%;
+}
+
+/* FOOTER */
 .decorative-background {
   background-image: url("/images/inspiration-images/felix-mooneeram-edited-reduced-2.png");
-  background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0px -300px;
-  min-height: 400px;
-  margin-top: -20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
 }
 
 @media only screen and (max-width: 650px) {
   nav ul {
-    display: none;
-  }
-
-  .form {
-    width: 70%;
-    padding: 0%;
-    margin-left: 20px;
-  }
-
-  .form__input {
-    padding: 10px 60px;
-  }
-
-  .cta-login {
-    padding: 20px 115px;
-  }
-
-  .decorative-background {
     display: none;
   }
 }
