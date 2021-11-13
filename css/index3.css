@@ -105,12 +105,13 @@ nav .cta:hover {
 .create-account {
   background-image: url("/images/inspiration-images/create-my-account.png");
   background-size: cover;
-  height: 70vh;
+  height: 100vh;
   text-align: center;
   padding-top: 40px;
+  margin-top: -100px;
 }
 
-.create-account a {
+.create-account .cta {
   margin: 0px;
   background: #833325;
   color: #f9fcfa;
@@ -118,16 +119,29 @@ nav .cta:hover {
   font-size: 24px;
   font-weight: bold;
   padding: 20px 60px;
+  position: relative;
+  top: 220px;
 }
 
-.create-account a:visited {
+.create-account .cta:visited {
   background: #833325;
   color: #f9fcfa;
 }
 
-.create-account a:hover {
+.create-account .cta:hover {
   background: #f9fcfa;
   color: #833325;
+}
+
+.create-account .terms {
+  color: #f9fcfa;
+  text-decoration: underline;
+  position: relative;
+  top: 300px;
+}
+
+.create-account .terms:hover {
+  opacity: 70%;
 }
 
 /* TOP RATED */
@@ -547,6 +561,20 @@ nav .cta:hover {
     background-image: none;
     height: 20vh;
     margin-top: -120px;
+  }
+
+  .create-account .cta {
+    font-size: 18px;
+    display: block;
+    padding: 40px 60px;
+    margin: 30px;
+    /* position: relative; */
+    top: -80px;
+  }
+
+  .create-account .terms {
+    font-size: 14px;
+    top: -80px;
   }
 
   .featured-container {
