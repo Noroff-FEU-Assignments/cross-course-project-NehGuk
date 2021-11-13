@@ -37,6 +37,11 @@ nav a {
   text-decoration: none;
 }
 
+.nav-btn {
+  text-decoration: none;
+  color: #f9fcfa;
+}
+
 .login-btn:visited {
   text-decoration: none;
   color: #f9fcfa;

@@ -49,6 +49,11 @@ nav a {
   text-decoration: none;
 }
 
+.nav-btn {
+  text-decoration: none;
+  color: #f9fcfa;
+}
+
 .nav-btn:visited {
   text-decoration: none;
   color: #f9fcfa;
