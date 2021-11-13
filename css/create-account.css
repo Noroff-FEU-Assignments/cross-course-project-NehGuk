@@ -1,29 +1,17 @@
-/* COLOUR PALETTE
-white #f9fcfa
-grey #707070
-blue #395ea9
-red #8e2c1e
-dark #252931
-maxdark #181a1f
-*/
-
-p,
-.home-top__intro-boxes a {
-  color: #f9fcfa;
-}
-
 body {
-  background: #181a1f;
-  margin: 0px 0px;
-  font-family: Futura, Tahoma, Verdana, sans-serif;
-  display: grid;
+  background: #252931;
+  margin: 0px;
+  font-family: Futura, Verdana, sans-serif;
+  color: white;
+  position: relative;
 }
+
+/* HEADER */
 
 nav {
-  background: #181a1f;
+  background: #252931;
   position: fixed;
   width: 100%;
-  z-index: 10;
 }
 
 nav img {
@@ -54,106 +42,153 @@ nav a {
   color: #f9fcfa;
 }
 
-.nav-btn:visited {
+nav .login-btn:visited {
   text-decoration: none;
   color: #f9fcfa;
 }
 
-.nav-btn:hover {
+nav .login-btn:hover {
   color: #707070;
 }
 
-h1 {
-  display: none;
-}
+/* MAIN */
 
 main {
+  padding-top: 100px;
+}
+
+/* CREATE YOUR ACCOUNT */
+h1 {
+  text-align: center;
+  color: #395ea9;
+  display: block;
+  margin-top: 40px;
+}
+
+/* CREATE YOUR ACCOUNT TEST BIG GLASSES AS BACKGROUND */
+
+/* TESTING: RESPONSIVE BACKGROUND GLASS */
+/* .create-your-account-ctas { 
   background-image: url("/images/icons/create-account-logo-big-glass.png");
-  min-height: 100vh;
-  background-size: 70%;
-  background-repeat: no-repeat;
-  background-position: center 0px;
-}
-
-/* SECTION CTAS */
-.ctas {
-  position: relative;
-  min-height: 55vh;
-}
-
-h2 {
-  display: none;
-}
-
-.create-account-cta-container {
-  position: relative;
-  left: 30px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  max-width: 900px;
-  margin: 410px auto;
-  gap: 90px;
-}
-
-.btn-watcher {
-  background: #395ea9;
-  padding: 70px 60px;
-  font-size: 30px;
-  font-weight: bold;
-}
-
-.btn-watcher:hover,
-.btn-film-maker:hover {
-  border: 10px solid;
-}
-
-.btn-film-maker {
-  background: #8e2c1e;
-  padding: 70px 40px;
-  font-size: 30px;
-  font-weight: bold;
-}
-
-.arrow-down {
-  position: relative;
-  text-align: center;
-  margin: -200px auto;
-}
-
-.join {
-  display: none;
-}
-
-/* SECTION ADVANTAGES */
-.advantages {
-  position: relative;
-  background-image: url("/images/inspiration-images/felix-mooneeram-edited-reduced-3.png");
-  background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0px 0px;
-  min-height: 80vh;
-  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 10px solid;
+  height: 60vh;
+  width: 800px;
+  margin: 30px auto;
+} */
+
+.ctas-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 60px;
 }
 
-.arrow-down img {
-  position: relative;
-  top: 10px;
-  width: 50px;
-}
-
-.advantages h2 {
+.ctas-container-m {
   display: none;
 }
 
-.advantages__container {
-  position: relative;
-  top: 300px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.ctas-container-m a {
+  text-decoration: none;
+  color: #f9fcfa;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.ctas-container a {
+  text-decoration: none;
+  color: #f9fcfa;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
   text-align: center;
 }
 
-footer {
-  background: yellow;
-  display: none;
+.watcher {
+  background: #415da4;
+  padding: 60px 110px;
+  text-decoration: none;
+}
+
+.watcher:hover {
+  background: #f9fcfa;
+  color: #415da4;
+}
+
+.film-maker {
+  background: #833325;
+  padding: 60px 110px;
+}
+
+.film-maker:hover {
+  background: #f9fcfa;
+  color: #833325;
+}
+
+/* ADVANTAGES */
+
+.advantages {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr 0.1fr 1fr;
+  gap: 20px;
+  width: 65%;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.advantages-item {
+  /* background: cornflowerblue; */
+}
+
+.advantages-item img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  padding: 20%;
+}
+
+.advantages-item p {
+  padding-right: 30%;
+}
+
+/* FOOTER */
+.decorative-background {
+  background-image: url("/images/inspiration-images/felix-mooneeram-edited-reduced-2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 70vh;
+}
+
+@media only screen and (max-width: 900px) {
+  nav ul {
+    display: none;
+  }
+  .ctas-container a {
+    font-size: 18px;
+  }
+
+  .ctas-container {
+    display: none;
+  }
+
+  .ctas-container-m {
+    display: grid;
+    gap: 30px;
+    padding: 30px;
+    margin: 0 auto;
+  }
+
+  .advantages {
+    display: none;
+  }
+
+  .decorative-background {
+    height: 40vh;
+    margin-top: -70px;
 }
