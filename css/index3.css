@@ -543,6 +543,10 @@ nav .cta:hover {
     margin: 5px 40px;
   }
 
+  .create-account {
+    background-image: none;
+  }
+
   .featured-container {
     width: 80%;
 
