@@ -176,7 +176,7 @@ nav a {
 .featured-container .price {
   grid-area: price;
   background: #181a1f;
-  color: #833325;
+  color: #f9fcfa;
 }
 
 .featured-container .price p {

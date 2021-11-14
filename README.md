@@ -30,3 +30,11 @@ MJ's feedback:
 ☐ CSS: new-releases-section-grid: margin auto is repeated, and display grid as well
 
 ---
+
+# Accessibility test
+
+Source: https://www.webaccessibility.com/
+Result: Health Score between 96% and 100%
+
+Source: https://accessibilitytest.org/results/RFRr78gApNSC
+Result: 95/100
