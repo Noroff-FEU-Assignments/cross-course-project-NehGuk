@@ -37,18 +37,19 @@ nav a {
   text-decoration: none;
 }
 
-.nav-btn {
+nav .cta-btn:visited {
   text-decoration: none;
   color: #f9fcfa;
 }
 
-nav .login-btn:visited {
-  text-decoration: none;
-  color: #f9fcfa;
+nav .cta-btn {
+  background: #395ea9;
+  padding: 15px 40px;
 }
 
-nav .login-btn:hover {
-  color: #707070;
+nav .cta-btn:hover {
+  color: #395ea9;
+  background: #f9fcfa;
 }
 
 /* MAIN */
