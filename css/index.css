@@ -146,6 +146,10 @@ nav .cta:hover {
   opacity: 70%;
 }
 
+.create-account h2 {
+  display: none;
+}
+
 /* TOP RATED */
 
 .top-rated {
@@ -469,6 +473,10 @@ nav .cta:hover {
 .browse-our-catalogue a:hover {
   background: #f9fcfa;
   color: #833325;
+}
+
+.browse-our-catalogue h2 {
+  display: none;
 }
 
 /* FOOTER */

@@ -165,7 +165,7 @@ nav a {
   width: 30px;
 }
 
-/* MY UPLOADS */
+/* MY FAVOURITES */
 
 .my-favourites {
   background: #181a1f;
@@ -233,6 +233,10 @@ nav a {
 
 .delete-my-account p:hover {
   opacity: 70%;
+}
+
+.delete-my-account h2 {
+  display: none;
 }
 
 /* FOOTER */

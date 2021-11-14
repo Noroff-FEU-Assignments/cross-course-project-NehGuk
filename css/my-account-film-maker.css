@@ -161,7 +161,7 @@ nav a {
   width: 30px;
 }
 
-/* MY FAVOURITES */
+/* MY UPLOADS (TASK: RENAME CLASSES) */
 
 .my-favourites {
   background: #181a1f;
@@ -237,6 +237,10 @@ nav a {
   color: #833325;
 }
 
+.upload h2 {
+  display: none;
+}
+
 /* DELETE MY ACCOUNT */
 .delete-my-account {
   background: #181a1f;
@@ -251,6 +255,10 @@ nav a {
 
 .delete-my-account p:hover {
   opacity: 70%;
+}
+
+.delete-my-account h2 {
+  display: none;
 }
 
 /* FOOTER */

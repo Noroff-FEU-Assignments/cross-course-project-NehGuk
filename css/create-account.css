@@ -154,6 +154,10 @@ h1 {
   padding-right: 30%;
 }
 
+h2 {
+  display: none;
+}
+
 /* FOOTER */
 .decorative-background {
   background-image: url("/images/inspiration-images/felix-mooneeram-edited-reduced-2.png");
