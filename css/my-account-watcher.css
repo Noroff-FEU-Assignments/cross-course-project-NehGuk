@@ -87,7 +87,7 @@ nav a {
 
 /* MAIN */
 
-/* MAIN MY ACCOUNT CONTAINER */
+/* MY ACCOUNT */
 
 .my-account-container {
   display: grid;
@@ -165,7 +165,7 @@ nav a {
   width: 30px;
 }
 
-/* MY FAVOURITES */
+/* MY UPLOADS */
 
 .my-favourites {
   background: #181a1f;
