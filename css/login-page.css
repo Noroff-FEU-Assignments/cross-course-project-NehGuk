@@ -6,7 +6,7 @@ body {
   position: relative;
 }
 
-/* HEADER */
+/* NAV */
 
 nav {
   background: #252931;
@@ -113,7 +113,8 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 300px;
+  height: 70vh;
+  padding-bottom: 0px;
 }
 
 @media only screen and (max-width: 650px) {
