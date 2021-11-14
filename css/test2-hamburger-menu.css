@@ -82,7 +82,7 @@ nav {
 
   /* ############### Home Page ############### (min-width: 1441px)*/
 
-  /* <<<------------------ Home Page Hero Section (min-width: 1441px) ---------------->>> */
+
 
   .home-grid-container {
     display: grid;
@@ -102,61 +102,3 @@ nav {
     height: 700px;
     /* width: 100%; */
   }
-
-  /* <<<------------------ Home Page Banner Section (min-width: 1441px) ---------------->>> */
-
-  .banner-section {
-    background-position-x: center;
-    padding: 300px 0;
-  }
-
-  /* <<<------------------ Home Page Instagram Feed Section (min-width: 1441px) ---------------->>> */
-
-  .instagram-feed {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 2em;
-    align-items: center;
-    margin: 2em 0;
-  }
-
-  .instagram-img img {
-    width: 100%;
-  }
-
-  /* ############### Shop Page ############### (min-width: 1441px)*/
-
-  /* <<<------------------ Shop Page Hero Section (min-width: 1441px) ---------------->>> */
-
-  section.hero-banner {
-    height: 30vh;
-  }
-
-  /* ###############================ Product Page ================############### (min-width: 1441px) */
-
-  /* <<<------------------ Product Page Hero Section ---------------->>> (min-width: 1441px) */
-  .product-page-cta a {
-    padding: 1.2em 7.2em;
-  }
-
-  /* ###############================ Contact Page ================############### (min-width: 1441px) */
-
-  /* <<<------------------ Contact Page Page Hero Section ---------------->>> (min-width: 1441px) */
-  section.hero-banner.has-background {
-    min-height: 30vh;
-  }
-
-  /* <<<------------------ Contact Map Section ---------------->>> (min-width: 1441px)*/
-
-  .container.cards-wrapper {
-    padding: 8em 2em 2em;
-  }
-
-  /* ############### Bag Detail Page ############### (max-width: 486px)*/
-
-  /* <<<------------------ Bag Detail Hero Section ---------------->>> (max-width: 486px)*/
-
-  .bag-detail-img {
-    width: 200px;
-  }
-}
