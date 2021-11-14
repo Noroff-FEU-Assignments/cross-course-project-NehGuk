@@ -116,6 +116,7 @@ main {
   background-position: center;
   height: 70vh;
   padding-bottom: 0px;
+  margin-top: -300px;
 }
 
 .decorative-background h2 {
