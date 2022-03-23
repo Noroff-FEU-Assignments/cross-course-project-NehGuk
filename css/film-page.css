@@ -1,0 +1,306 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #252931;
+  margin: 0px;
+  font-family: Futura, Verdana, sans-serif;
+  color: white;
+  position: relative;
+}
+
+/* NAV */
+
+nav {
+  background: #252931;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+nav .logo-mini-m {
+  display: none;
+  width: 50px;
+}
+
+nav .logo-mini {
+  width: 180px;
+  padding: 20px;
+}
+
+nav ul {
+  position: relative;
+  float: right;
+  padding: 20px;
+  color: #f9fcfa;
+}
+
+nav li {
+  display: inline-block;
+  padding: 0px 20px;
+  font-size: 24px;
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.form-wrapper {
+  display: inline;
+}
+
+.search-box {
+  width: 150px;
+  height: 35px;
+}
+
+.search-box-icon {
+  width: 25px;
+  position: relative;
+  top: 7px;
+}
+
+.nav-btn {
+  text-decoration: none;
+  color: #f9fcfa;
+}
+
+.nav-btn:visited {
+  text-decoration: none;
+  color: #f9fcfa;
+}
+
+.nav-btn:hover {
+  color: #707070;
+}
+
+#active {
+  color: #833325;
+  font-weight: bold;
+}
+
+/* MAIN */
+
+/* WATCH NOW */
+
+.featured {
+  background: #252931;
+}
+
+.featured-container {
+  display: grid;
+  gap: 0px;
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  grid-template-areas:
+    "title title"
+    "picture picture"
+    "film-title cta"
+    "stars price"
+    "details details"
+    "synopsis synopsis";
+}
+
+.featured-container .grid-item {
+  /* background: cornflowerblue; */
+  background-size: cover;
+  max-width: 100%;
+}
+
+.featured-container .title {
+  grid-area: title;
+  margin-top: 200px;
+  margin-top: 0px;
+}
+
+.featured-container .picture {
+  grid-area: picture;
+}
+
+.featured-container .film-title {
+  grid-area: film-title;
+  background: #181a1f;
+  padding: 30px 0 30px 30px;
+}
+
+.featured-container .film-title h3 {
+  font-size: 30px;
+  margin: 0;
+}
+
+.featured-container .details {
+  grid-area: details;
+  background: #181a1f;
+  padding: 0 0 10px 30px;
+}
+
+.details__breadcrumbs,
+.details strong {
+  opacity: 70%;
+}
+
+.featured-container .stars {
+  grid-area: stars;
+  text-align: left;
+  background: #181a1f;
+  padding: 0 0 0 30px;
+}
+
+.featured-container img {
+  width: 100%;
+  height: 100%;
+
+  /*   object-fit: cover; */
+}
+
+.stars img {
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+}
+
+.featured-container .synopsis {
+  grid-area: synopsis;
+  background: #181a1f;
+  padding: 0 0 30px 30px;
+}
+
+.featured-container .synopsis p {
+  max-width: 40%;
+}
+
+.featured-container .price {
+  grid-area: price;
+  background: #181a1f;
+  color: #f9fcfa;
+}
+
+.featured-container .price p {
+  margin-top: -5px;
+  padding-left: 30px;
+}
+
+.featured-container .cta {
+  grid-area: cta;
+  background: #181a1f;
+}
+
+.featured-container .cta button {
+  background: #833325;
+  color: #f9fcfa;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+  height: 60px;
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.featured-container .cta button:hover {
+  background: #f9fcfa;
+  color: #833325;
+}
+
+.featured-container .white-space {
+  grid-area: white-space;
+}
+
+.featured-container img:hover {
+  opacity: 50%;
+}
+
+/* FOOTER */
+.logo-footer {
+  text-align: center;
+  background: #000;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.logo-footer img {
+  width: 200px;
+}
+
+@media only screen and (max-width: 910px) {
+  /* NAV */
+  nav li {
+    font-size: 12px;
+    padding: 7px;
+  }
+
+  nav .logo-mini-m {
+    display: inline;
+    width: 50px;
+    padding-top: 35px;
+    padding-left: 5px;
+  }
+
+  nav .logo-mini {
+    display: none;
+  }
+
+  .search-box {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .featured-container {
+    width: 90%;
+    grid-template-areas:
+      "title title"
+      "picture picture"
+      "film-title film-title"
+      "cta cta"
+      "price price"
+      "stars stars"
+      "details details"
+      "synopsis synopsis";
+  }
+
+  .featured-container .arrow-left {
+    display: none;
+  }
+
+  .featured-container .arrow-right {
+    display: none;
+  }
+
+  .featured-container .stars {
+    text-align: left;
+    background: #181a1f;
+    padding: 0 0 0 30px;
+  }
+
+  .stars img {
+    width: 40px;
+    height: 40px;
+    padding: 2px;
+  }
+
+  .featured-container .synopsis p {
+    max-width: 90%;
+  }
+
+  .featured-container .cta button {
+    margin-top: -10px;
+  }
+}
+
+@media only screen and (max-width: 356px) {
+  nav .logo-mini-m {
+    display: none;
+  }
+
+  .upload a {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 30px;
+  }
+}

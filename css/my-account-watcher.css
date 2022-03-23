@@ -1,0 +1,303 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #252931;
+  margin: 0px;
+  font-family: Futura, Verdana, sans-serif;
+  color: white;
+  position: relative;
+}
+
+/* NAV */
+
+nav {
+  background: #252931;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+nav .logo-mini-m {
+  display: none;
+  width: 50px;
+}
+
+nav .logo-mini {
+  width: 180px;
+  padding: 20px;
+}
+
+nav ul {
+  position: relative;
+  float: right;
+  padding: 20px;
+  color: #f9fcfa;
+}
+
+nav li {
+  display: inline-block;
+  padding: 0px 20px;
+  font-size: 24px;
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.form-wrapper {
+  display: inline;
+}
+
+.search-box {
+  width: 150px;
+  height: 35px;
+}
+
+.search-box-icon {
+  width: 25px;
+  position: relative;
+  top: 7px;
+}
+
+.nav-btn {
+  text-decoration: none;
+  color: #f9fcfa;
+}
+
+.nav-btn:visited {
+  text-decoration: none;
+  color: #f9fcfa;
+}
+
+.nav-btn:hover {
+  color: #707070;
+}
+
+#active {
+  color: #395ea9;
+  font-weight: bold;
+}
+
+.menu #cat {
+  display: none;
+}
+
+/* MAIN */
+
+/* MY ACCOUNT */
+
+.my-account-container {
+  display: grid;
+  width: 600px;
+  margin: 0 auto;
+  padding-top: 120px;
+  gap: 20px;
+  grid-template-areas:
+    "title title"
+    "picture picture"
+    "info data"
+    "edit edit"
+    "arrow arrow";
+}
+
+.my-account-container .grid-item {
+  /* background: cornflowerblue; */
+}
+
+.my-account-container .title {
+  grid-area: title;
+  text-align: center;
+}
+
+.my-account-container .title h1 {
+  color: #f9fcfa;
+  font-size: 36px;
+}
+
+.my-account-container .picture {
+  grid-area: picture;
+  text-align: center;
+}
+
+.my-account-container .picture img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.my-account-container .info {
+  grid-area: info;
+  text-align: right;
+}
+
+.my-account-container .info p {
+  opacity: 60%;
+}
+
+.my-account-container .data {
+  grid-area: data;
+}
+
+.my-account-container .edit {
+  grid-area: edit;
+  text-align: center;
+}
+
+.my-account-container .edit p {
+  text-decoration: underline;
+}
+
+.my-account-container .edit p:hover {
+  opacity: 70%;
+}
+
+.my-account-container .arrow {
+  grid-area: arrow;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.my-account-container .arrow img {
+  width: 30px;
+}
+
+/* MY FAVOURITES */
+
+.my-favourites {
+  background: #181a1f;
+}
+
+.my-favourites-container {
+  display: grid;
+  gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  grid-template-areas:
+    "title title title title"
+    "film1 film2 film3 film4 ";
+}
+
+.my-favourites-container .grid-item {
+  /* background: cornflowerblue; */
+  background-size: cover;
+  max-width: 100%;
+}
+
+.my-favourites-container .title {
+  grid-area: title;
+}
+
+.my-favourites-container .film1 {
+  grid-area: film1;
+}
+
+.my-favourites-container .film2 {
+  grid-area: film2;
+}
+
+.my-favourites-container .film3 {
+  grid-area: film3;
+}
+
+.my-favourites-container .film4 {
+  grid-area: film4;
+}
+
+.my-favourites-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.my-favourites-container img:hover {
+  opacity: 50%;
+}
+
+/* DELETE MY ACCOUNT */
+.delete-my-account {
+  background: #181a1f;
+}
+
+.delete-my-account p {
+  text-align: center;
+  text-decoration: underline;
+  padding-bottom: 50px;
+  margin: 0px;
+}
+
+.delete-my-account p:hover {
+  opacity: 70%;
+}
+
+.delete-my-account h2 {
+  display: none;
+}
+
+/* FOOTER */
+.logo-footer {
+  text-align: center;
+  background: #000;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.logo-footer img {
+  width: 200px;
+}
+
+@media only screen and (max-width: 895px) {
+  /* NAV */
+  nav li {
+    font-size: 12px;
+    padding: 7px;
+  }
+
+  nav .logo-mini-m {
+    display: inline;
+    width: 50px;
+    padding-top: 35px;
+    padding-left: 5px;
+  }
+
+  nav .logo-mini {
+    display: none;
+  }
+
+  .search-box {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  /* MY ACCOUNT */
+  .my-account-container {
+    width: 100%;
+  }
+
+  .my-account-container .picture img {
+    width: 150px;
+    height: 150px;
+  }
+
+  /* MY FAVOURITES */
+  .my-favourites-container {
+    gap: 10px;
+    width: 80%;
+    grid-template-areas:
+      "title title"
+      "film1 film2"
+      "film3 film4";
+  }
+}
+
+@media only screen and (max-width: 356px) {
+  nav .logo-mini-m {
+    display: none;
+  }
+}

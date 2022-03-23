@@ -1,0 +1,117 @@
+body {
+  background: #252931;
+  margin: 0px;
+  font-family: Futura, Verdana, sans-serif;
+  color: white;
+  position: relative;
+}
+
+/* NAV */
+
+nav {
+  background: #252931;
+  position: fixed;
+  width: 100%;
+}
+
+nav img {
+  width: 180px;
+  padding: 20px;
+}
+
+nav ul {
+  position: relative;
+  float: right;
+  padding: 20px;
+  color: #f9fcfa;
+}
+
+nav li {
+  display: inline-block;
+  padding: 0px 30px;
+  font-size: 24px;
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.nav-btn {
+  text-decoration: none;
+  color: #f9fcfa;
+}
+
+nav .login-btn:visited {
+  text-decoration: none;
+  color: #f9fcfa;
+}
+
+nav .login-btn:hover {
+  color: #707070;
+}
+
+/* MAIN */
+
+main {
+  padding-top: 100px;
+}
+
+.for-film-makers {
+  text-align: center;
+  color: #f9fcfa;
+  display: block;
+  margin-top: 40px;
+}
+
+/* FORM */
+
+.form-container {
+  margin-bottom: -100px;
+}
+
+.form-container form {
+  display: grid;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.form__input {
+  margin-bottom: 15px;
+  height: 30px;
+}
+
+.cta-join-now {
+  margin-top: 20px;
+  background: #833325;
+  border: none;
+  height: 60px;
+  color: #f9fcfa;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.cta-join-now:hover {
+  background: #f9fcfa;
+  color: #833325;
+}
+
+/* FOOTER */
+.decorative-background {
+  background-image: url("/images/inspiration-images/background1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+}
+
+.decorative-background h2 {
+  display: none;
+}
+
+@media only screen and (max-width: 650px) {
+  nav ul {
+    display: none;
+  }
+}
