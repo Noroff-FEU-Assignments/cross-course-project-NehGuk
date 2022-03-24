@@ -177,6 +177,7 @@ nav a {
   grid-area: price;
   background: #181a1f;
   color: #f9fcfa;
+  /* display: none; */
 }
 
 .featured-container .price p {
@@ -187,6 +188,7 @@ nav a {
 .featured-container .cta {
   grid-area: cta;
   background: #181a1f;
+  /* display: none; */
 }
 
 .featured-container .cta button {
@@ -213,6 +215,26 @@ nav a {
 
 .featured-container img:hover {
   opacity: 50%;
+}
+
+.cta-pay-per-view {
+  display: block;
+}
+
+.cta-confirm {
+  display: none;
+}
+
+.cta-watch-now {
+  display: none;
+}
+
+#film-price {
+  display: block;
+}
+
+#payment-method {
+  display: none;
 }
 
 /* FOOTER */
