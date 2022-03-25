@@ -1,5 +1,5 @@
-const loginButton = document.querySelector("#login")
+const loginButton = document.querySelector("#login");
 
-loginButton.style.display = "block";
+loginButton.style.display = "none";
 
 console.log("Test");
