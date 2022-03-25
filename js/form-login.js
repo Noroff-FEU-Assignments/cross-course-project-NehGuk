@@ -5,10 +5,30 @@ const password = document.querySelector("#password");
 const passwordError = document.querySelector("#password-error");
 const loginButton = document.querySelector("#login");
 
+function validateForm() {
+    event.preventDefault();
 
-/* passwordError.style.display = "none"; */
-/* emailError.style.display = "none"; */
-/* formContainer.style.display = "none" */
-/* loginButton.style.display = "none" */
+    if(validateEmail(email.value) === true ) {
+        emailError.style.display = "none";
+    }
+    else {
+        emailError.style.display = "block";
+    }
 
+    if(password.value.length >= 8 && password.value.length <= 20 ) {
+        passwordError.style.display = "none";
+    }
+    else {
+        passwordError.style.display = "block";
+    }
+
+}
+
+formContainer.addEventListener("submit", validateForm);
+
+function validateEmail(email) {
+    const regEx = /\S+@\S+\.\S+/;
+    const patternMatches = regEx.test(email);
+    return patternMatches;
+}
 

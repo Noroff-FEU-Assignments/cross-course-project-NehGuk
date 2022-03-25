@@ -109,7 +109,9 @@ main {
 }
 
 .error-message {
-  color: orange;
+  font-size: 0.9em;
+  opacity: 90%;
+  color: lightblue;
   margin: 4px 0 4px 0;
   display: none;
 }
