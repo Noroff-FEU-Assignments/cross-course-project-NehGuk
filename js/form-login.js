@@ -1,4 +1,5 @@
-const test = document.querySelector(".form.container");
+const loginButton = document.querySelector("#login")
 
-test.style.display = "none";
+loginButton.style.display = "block";
 
+console.log("Test");

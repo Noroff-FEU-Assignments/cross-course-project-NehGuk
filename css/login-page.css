@@ -108,6 +108,12 @@ main {
   opacity: 70%;
 }
 
+.error-message {
+  color: orange;
+  margin: 4px 0 4px 0;
+  display: none;
+}
+
 /* FOOTER */
 .decorative-background {
   background-image: url("/images/inspiration-images/background1.jpg");
