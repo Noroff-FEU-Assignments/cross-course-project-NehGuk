@@ -5,9 +5,6 @@ const password = document.querySelector("#password");
 const passwordError = document.querySelector("#password-error");
 const loginButton = document.querySelector("#login");
 
-
-
-
 function validateForm(event) {
     event.preventDefault();
     let validationPassed = true;
@@ -29,7 +26,7 @@ function validateForm(event) {
     }
 
     if(validationPassed === true) {
-        document.href = "/my-account-film-maker.html";
+        document.location.href = "/my-account-film-maker.html";
 
     }
 
@@ -42,4 +39,3 @@ function validateEmail(email) {
     const patternMatches = regEx.test(email);
     return patternMatches;
 }
-
