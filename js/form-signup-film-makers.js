@@ -46,7 +46,7 @@ function validateForm(event) {
     }
 
     if(validationPassed === true) {
-        document.location.href = "/my-account-watcher.html";
+        document.location.href = "/my-account-film-maker.html";
     }
 
 }
