@@ -37,24 +37,21 @@ function validateForm(event) {
         validationPassed = false;
     }
 
-    if(confirmPassword.value === password.value) {
+/*     if(confirmPassword.value === password.value) {
         confirmPasswordError.style.dysplay = "none";
     }
     else {
         confirmPasswordError.style.dysplay = "block";
         validationPassed = false;
-    }
-
-    /* if(validationPassed = true) {
-        document.location.href = "/my-account-watcher.html";
     } */
+
+    if(validationPassed === true) {
+        document.location.href = "/my-account-watcher.html";
+    }
 
 }
 
-
 formContainer.addEventListener("submit", validateForm);
-
-
 
 function validateEmail(email) {
     const regEx = /\S+@\S+\.\S+/;
