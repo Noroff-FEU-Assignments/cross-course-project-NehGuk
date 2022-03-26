@@ -19,6 +19,7 @@
           a.appendChild(r);
       })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
+    <script defer src="/js/form-signup-watchers.js"></script>
 
   </head>
   <body>
@@ -33,15 +34,24 @@
     <section>
       <h1 class="for-watchers">For Watchers</h1>
       <div class="form-container">
-        <form action="/my-account-watcher.html" method="GET" class="form">
+        <form class="form" id="form">
+
           <label for="full-name">Full name</label>
+          <p class="error-message" id="full-name-error">Please enter your name</p>
           <input type="text" name="full-name" id="full-name" class="form__input">
+          
           <label for="email">Email</label>
+          <p class="error-message" id="email-error">Please enter a valid email address</p>
           <input type="text" name="email" id="email" class="form__input">
+          
           <label for="password">Password</label>
+          <p class="error-message" id="password-error">Password must contain between 8 and 20 characters</p>
           <input type="text" name="password" id="password" class="form__input">
+          
           <label for="confirm-password">Confirm password</label>
+          <p class="error-message" id="confirm-password-error">Please type the same password on both fields</p>
           <input type="text" name="confirm-password" id="confirm-password" class="form__input">
+          
           <input type="submit" value="Join now" class="form__input cta-join-now">
         </form>
       </div>

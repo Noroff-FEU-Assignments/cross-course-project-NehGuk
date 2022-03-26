@@ -97,6 +97,14 @@ main {
   color: #395ea9;
 }
 
+.error-message {
+  font-size: 0.9em;
+  opacity: 90%;
+  color: lightblue;
+  margin: 4px 0 4px 0;
+  display: none;
+}
+
 /* FOOTER */
 .decorative-background {
   background-image: url("/images/inspiration-images/background1.jpg");
