@@ -26,7 +26,7 @@ function validateForm(event) {
     }
 
     if(validationPassed === true) {
-        document.location.href = "/my-account-film-maker.html";
+        document.location.href = "/catalogue.html";
 
     }
 
