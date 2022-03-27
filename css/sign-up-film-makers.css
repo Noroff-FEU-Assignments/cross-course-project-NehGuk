@@ -90,6 +90,7 @@ main {
   color: #f9fcfa;
   font-size: 28px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .cta-join-now:hover {

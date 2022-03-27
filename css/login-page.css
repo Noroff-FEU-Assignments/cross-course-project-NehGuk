@@ -96,12 +96,14 @@ main {
 .cta-join-now:hover {
   background: #f9fcfa;
   color: #395ea9;
+  cursor: pointer;
 }
 
 .forgot-password {
   text-align: center;
   margin-top: 30px;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .forgot-password:hover {
