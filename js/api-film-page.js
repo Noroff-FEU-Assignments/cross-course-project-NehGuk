@@ -1,6 +1,6 @@
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
-const urlFeaturedWatch = `https://henrikugler.no/cmscaapi/wp-json/wc/v3/products/${id}?consumer_key=ck_4ee7eb518ecca82639976d69725b240eca7cd1e5&consumer_secret=cs_3ab719e026712e212e3eeefdb0f8a25ec4c3326d&per_page=20&category=34`;
+const urlFeaturedWatch = `https://henrikugler.no/cmscaapi/wp-json/wc/v3/products/${id}?consumer_key=ck_4ee7eb518ecca82639976d69725b240eca7cd1e5&consumer_secret=cs_3ab719e026712e212e3eeefdb0f8a25ec4c3326d&per_page=20`;
 const featuredContainer = document.querySelector(".featured-container");
 
 async function getSelectedFilm() {
@@ -25,8 +25,8 @@ async function getSelectedFilm() {
               <h3>${films.name}</h3>
             </div>
             <div class="grid-item details">
-              <p><strong>Director | </strong>${films.attributes[1].options}</p>
-              <p><strong>Country | </strong>${films.attributes[0].options}</p>
+              <p><strong>Director | </strong>${films.attributes[0].options}</p>
+              <p><strong>Country | </strong>${films.attributes[1].options}</p>
               <p class="details__breadcrumbs">${films.tags[0].name}, ${films.tags[1].name}, ${films.tags[2].name}</p>
             </div>
             <div class="grid-item stars">
