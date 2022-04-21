@@ -1,9 +1,3 @@
-
-const params = new URLSearchParams(window.location.search);
-
-
-
-
 const urlFeatured = "https://henrikugler.no/cmscaapi/wp-json/wc/v3/products?consumer_key=ck_4ee7eb518ecca82639976d69725b240eca7cd1e5&consumer_secret=cs_3ab719e026712e212e3eeefdb0f8a25ec4c3326d&per_page=20&category=34";
 const featuredContainer = document.querySelector(".featured-container");
 
@@ -23,7 +17,7 @@ async function getFeaturedFilms() {
             <h2>Featured</h2>
           </div>
           <div class="grid-item picture">
-            <a href="/film-page.html">
+            <a href="/film-page.html?id=${films[i].id}">
             <img src="${films[i].images[1].src}" alt="Film scene: ${films[i].name}" />
             </a>
             
