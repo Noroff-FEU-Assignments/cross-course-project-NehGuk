@@ -23,9 +23,7 @@ async function getFeaturedFilms() {
             
           </div>
           <div class="grid-item film-title">
-            <a href="/login-page.html" class="film-title-link">
             <h3>${films[i].name}</h3>
-            </a>
           </div>
           <div class="grid-item details">
             <p><strong>Director | </strong>${films[i].attributes[1].options}</p>

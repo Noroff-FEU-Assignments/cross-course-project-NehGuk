@@ -125,9 +125,16 @@ nav a {
   padding: 30px 0 30px 30px;
 }
 
+
 .featured-container .film-title h3 {
   font-size: 30px;
   margin: 0;
+  cursor: pointer;
+}
+
+.featured-container .film-title h3:visited {
+  text-decoration: none;
+  color: white;
 }
 
 .featured-container .details {
