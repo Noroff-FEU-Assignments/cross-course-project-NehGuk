@@ -17,4 +17,3 @@ ctaConfirm.onclick = function() {
     paymentMethod.style.display = "none";
     //add code to make sure this item is added to the "my tickets" section under "My account"
 }
-
