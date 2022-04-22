@@ -327,3 +327,14 @@ nav a {
     padding: 10px 30px;
   }
 }
+
+.loader {
+  display: block;
+  border: 30px solid #cccccc;
+  border-top: 30px solid darkslategray;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  animation: spin 2s linear infinite;
+}

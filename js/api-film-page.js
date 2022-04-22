@@ -4,16 +4,17 @@ const urlFeaturedWatch = `https://henrikugler.no/cmscaapi/wp-json/wc/v3/products
 const featuredContainer = document.querySelector(".featured-container");
 
 async function getSelectedFilm() {
-  const res = await fetch(urlFeaturedWatch);
-  const films = await res.json();
-
-  featuredContainer.innerHTML = "";
-  
-  for (let i = 0; i < 1; i++) {
+  try {
+    const res = await fetch(urlFeaturedWatch);
+    const films = await res.json();
     
-    featuredContainer.innerHTML += `
+    featuredContainer.innerHTML = "";
+    
+    for (let i = 0; i < 1; i++) {
+
+      featuredContainer.innerHTML += `
         
-      <div class="grid-item title">
+        <div class="grid-item title">
               <h1>Watch now</h1>
             </div>
             <div class="grid-item picture">
@@ -47,33 +48,32 @@ async function getSelectedFilm() {
               <p><button class="cta-confirm">Confirm</button></p>
               <p><button class="cta-watch-now">Watch now</button></p>
             </div>
-    `;
-    // code to make the CTA dynamic
-    const ctaPayPerView = document.querySelector(".cta-pay-per-view");
-    const ctaConfirm = document.querySelector(".cta-confirm");
-    const ctaWatchNow = document.querySelector(".cta-watch-now");
-    const price = document.querySelector("#film-price");
-    const paymentMethod = document.querySelector("#payment-method");
+        `;  
+        // code to make the CTA dynamic
+        const ctaPayPerView = document.querySelector(".cta-pay-per-view");
+        const ctaConfirm = document.querySelector(".cta-confirm");
+        const ctaWatchNow = document.querySelector(".cta-watch-now");
+        const price = document.querySelector("#film-price");
+        const paymentMethod = document.querySelector("#payment-method");
 
-    ctaPayPerView.onclick = function() {
-    ctaPayPerView.style.display = "none";
-    ctaConfirm.style.display = "block";
-    paymentMethod.style.display = "block";
-    }
+        ctaPayPerView.onclick = function() {
+        ctaPayPerView.style.display = "none";
+        ctaConfirm.style.display = "block";
+        paymentMethod.style.display = "block";
+        }
 
-    ctaConfirm.onclick = function() {
-    ctaConfirm.style.display = "none";
-    ctaWatchNow.style.display = "block";
-    price.style.display = "none";
-    paymentMethod.style.display = "none";
-    
-}
-
-
-
-
-
+        ctaConfirm.onclick = function() {
+        ctaConfirm.style.display = "none";
+        ctaWatchNow.style.display = "block";
+        price.style.display = "none";
+        paymentMethod.style.display = "none";
+        }
+    } 
   }
+  catch(error) {
+    console.log("An error has occurred.");
+  }
+  
 }
 
 getSelectedFilm();
