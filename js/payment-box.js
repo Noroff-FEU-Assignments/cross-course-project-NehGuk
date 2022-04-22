@@ -1,3 +1,5 @@
+// this code has been added to the end of the getFilm function, insude api-film-page.js.
+
 const ctaPayPerView = document.querySelector(".cta-pay-per-view");
 const ctaConfirm = document.querySelector(".cta-confirm");
 const ctaWatchNow = document.querySelector(".cta-watch-now");
@@ -15,5 +17,4 @@ ctaConfirm.onclick = function() {
     ctaWatchNow.style.display = "block";
     price.style.display = "none";
     paymentMethod.style.display = "none";
-    //add code to make sure this item is added to the "my tickets" section under "My account"
 }
