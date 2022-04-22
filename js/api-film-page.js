@@ -48,6 +48,7 @@ async function getSelectedFilm() {
               <p><button class="cta-watch-now">Watch now</button></p>
             </div>
     `;
+    // code to make the CTA dynamic
     const ctaPayPerView = document.querySelector(".cta-pay-per-view");
     const ctaConfirm = document.querySelector(".cta-confirm");
     const ctaWatchNow = document.querySelector(".cta-watch-now");
@@ -65,7 +66,7 @@ async function getSelectedFilm() {
     ctaWatchNow.style.display = "block";
     price.style.display = "none";
     paymentMethod.style.display = "none";
-    //add code to make sure this item is added to the "my tickets" section under "My account"
+    
 }
 
 
