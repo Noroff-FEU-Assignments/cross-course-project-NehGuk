@@ -241,7 +241,7 @@ nav a {
 /* FOOTER */
 .logo-footer {
   text-align: center;
-  background: #000;
+  background: #252931;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -330,11 +330,20 @@ nav a {
 
 .loader {
   display: block;
-  border: 30px solid #cccccc;
-  border-top: 30px solid darkslategray;
+  border: 10px solid #f9fcfa;
+  border-top: 10px solid #833325;
   border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  margin: 0 auto;
-  animation: spin 2s linear infinite;
+  width: 50px;
+  height: 50px;
+  margin: 100px auto;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
