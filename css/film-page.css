@@ -214,9 +214,9 @@ nav a {
   grid-area: white-space;
 }
 
-.featured-container img:hover {
+/* .featured-container img:hover {
   opacity: 50%;
-}
+} */
 
 .cta-pay-per-view {
   display: block;
@@ -236,6 +236,26 @@ nav a {
 
 #payment-method {
   display: none;
+}
+
+.loader {
+  display: block;
+  border: 10px solid #f9fcfa;
+  border-top: 10px solid #833325;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 100px auto;
+  animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* FOOTER */
@@ -328,22 +348,3 @@ nav a {
   }
 }
 
-.loader {
-  display: block;
-  border: 10px solid #f9fcfa;
-  border-top: 10px solid #833325;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  margin: 100px auto;
-  animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
