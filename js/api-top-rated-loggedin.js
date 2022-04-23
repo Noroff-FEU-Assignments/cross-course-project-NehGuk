@@ -14,7 +14,7 @@ async function getTopRated() {
         <div class="grid-item title">
             <h2>Top rated</h2>
         </div>
-        <div class="grid-item">
+        <div>
             <a href="/film-page.html?id=${films[i].id}">
             <img src="${films[i].images[0].src}" alt="Film poster: ${films[i].name}" />
             </a>
