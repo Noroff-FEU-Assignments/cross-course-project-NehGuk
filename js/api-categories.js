@@ -9,7 +9,9 @@ async function getTags() {
         for (let i = 0; i < tags.length; i++) {
             
             categoriesContainer.innerHTML += `
-                <a>${tags[i].name}</a>
+                <a href="/search-results.html?id=${tags[i].id}?name=${tags[i].name}">
+                    ${tags[i].name}
+                </a>
             `;
         }
     }

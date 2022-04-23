@@ -421,18 +421,27 @@ nav a {
 
 .categories a {
   background: #395ea9;
+  color: #f9fcfa;
   display: inline-block;
   border-radius: 20px;
   padding: 10px 40px;
   margin-bottom: 20px;
   margin-right: 10px;
   cursor: pointer;
+  text-decoration: none;
+}
+
+.categories a:visited {
+  background: #395ea9;
+  color: #f9fcfa;
+
 }
 
 .categories a:hover {
   background: #f9fcfa;
-  color: #395ea9;
+  color: #395ea9 ;
 }
+
 
 /* FOOTER */
 .logo-footer {
