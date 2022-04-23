@@ -2,26 +2,28 @@ const urlNewReleases = "https://henrikugler.no/cmscaapi/wp-json/wc/v3/products?c
 const newReleasesContainer = document.querySelector(".new-releases-container");
 
 async function getNewReleases() {
-  const res = await fetch(urlNewReleases);
-  const films = await res.json();
+  try {
+    const res = await fetch(urlNewReleases);
+    const films = await res.json();
 
-  // empty the element before adding films
-  newReleasesContainer.innerHTML = "";
-  
-  // loop over films
-  for (let i = 0; i < 9; i++) {
-    // for getting all of the items: for (let i = 0; i < films.length; i++) {
-      
-    newReleasesContainer.innerHTML += `
-        <div class="grid-item title">
-            <h2>New Releases</h2>
-        </div>
-        <div class="grid-item">
-            <a href="/login-page.html">
-            <img src="${films[i].images[0].src}" alt="Film poster: ${films[i].name}" />
-            </a>
-        </div>
-    `;
+    newReleasesContainer.innerHTML = "";
+    
+    for (let i = 0; i < 9; i++) {
+        
+      newReleasesContainer.innerHTML += `
+          <div class="grid-item title">
+              <h2>New Releases</h2>
+          </div>
+          <div class="grid-item">
+              <a href="/login-page.html">
+              <img src="${films[i].images[0].src}" alt="Film poster: ${films[i].name}" />
+              </a>
+          </div>
+      `;
+    }
+  }
+  catch(error) {
+    console.log("An error has occurred.");
   }
 }
 

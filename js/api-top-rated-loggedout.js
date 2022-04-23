@@ -2,26 +2,29 @@ const urlTopRated = "https://henrikugler.no/cmscaapi/wp-json/wc/v3/products?cons
 const topRatedContainer = document.querySelector(".top-rated-container");
 
 async function getTopRated() {
-  const res = await fetch(urlTopRated);
-  const films = await res.json();
+  try {
+    const res = await fetch(urlTopRated);
+    const films = await res.json();
 
-  // empty the element before adding films
-  topRatedContainer.innerHTML = "";
-  
-  // loop over films
-  for (let i = 0; i < 4; i++) {
-      // for getting all of the items: for (let i = 0; i < films.length; i++) {
-      
-    topRatedContainer.innerHTML += `
-        <div class="grid-item title">
-            <h2>Top rated</h2>
-        </div>
-        <div class="grid-item">
-            <a href="/login-page.html">
-            <img src="${films[i].images[0].src}" alt="Film poster: ${films[i].name}" />
-            </a>
-        </div>
-    `;
+    topRatedContainer.innerHTML = "";
+    
+    for (let i = 0; i < 4; i++) {
+        // for getting all of the items: for (let i = 0; i < films.length; i++) {
+        
+      topRatedContainer.innerHTML += `
+          <div class="grid-item title">
+              <h2>Top rated</h2>
+          </div>
+          <div class="grid-item">
+              <a href="/login-page.html">
+              <img src="${films[i].images[0].src}" alt="Film poster: ${films[i].name}" />
+              </a>
+          </div>
+      `;
+    }
+  }
+  catch(error) {
+    console.log("An error has occurred.");
   }
 }
 
