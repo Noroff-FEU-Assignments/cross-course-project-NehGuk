@@ -1,6 +1,6 @@
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
-const tagName = params.get("name");
+const tagName = params.get("tagname");
 const urlTagSearch = `https://henrikugler.no/cmscaapi/wp-json/wc/v3/products?consumer_key=ck_4ee7eb518ecca82639976d69725b240eca7cd1e5&consumer_secret=cs_3ab719e026712e212e3eeefdb0f8a25ec4c3326d&per_page=90&tag=${id}`;
 const topRatedContainer = document.querySelector(".top-rated-container");
 const loader = document.querySelector(".loader");
