@@ -29,9 +29,9 @@ async function getSelectedFilm() {
             <h3>${films.name}</h3>
           </div>
           <div class="grid-item details">
-          <p><strong>Director | </strong> ${films.attributes[1].options} </p>
-          <p><strong>Country | </strong> ${films.attributes[0].options} </p>
-          <p><strong>Year | </strong> ${films.attributes[2].options} </p>
+          <p>Director | <strong>${films.attributes[1].options}</strong> </p>
+          <p>Country | <strong>${films.attributes[0].options}</strong> </p>
+          <p>Year | <strong>${films.attributes[2].options}</strong> </p>
             <p class="details__breadcrumbs">${films.tags[0].name}, ${films.tags[1].name}, ${films.tags[2].name}</p>
           </div>
           <div class="grid-item stars">

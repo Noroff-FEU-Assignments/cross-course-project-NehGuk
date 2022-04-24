@@ -86,6 +86,10 @@ nav a {
 
 /* SEARCH RESULTS */
 
+.search-title {
+  margin-top: 150px;
+}
+
 .top-rated {
   background: #181a1f;
 }

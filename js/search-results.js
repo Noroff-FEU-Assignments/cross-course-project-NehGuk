@@ -17,7 +17,7 @@ async function getTagSearch() {
       
     topRatedContainer.innerHTML += `
         <div class="grid-item title">
-            <h1><br><br><br><br>${tagName}</h1>
+            <h1 class="search-title">${tagName}</h1>
         </div>
         <div>
             <a href="/film-page.html?id=${films[i].id}">
