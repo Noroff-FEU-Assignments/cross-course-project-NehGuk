@@ -1,4 +1,6 @@
-# cross-course-project-NehGuk
+# Cross-course Project
+
+By Henri Kugler
 
 ## First delivery
 
