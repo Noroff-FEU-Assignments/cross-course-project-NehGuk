@@ -2,7 +2,7 @@
 
 ![image](./assets/screenshot-square-eyes-1.jpg)
 
-This is my first web project ever! I was tasked with designing a streaming platform for two target audiences: independent film makers and lovers of independent films. It has been developed as part of the HTML, CSS, Javascript 1, Content Management Systems, Design and Interaction Design modules of my front-end development study programme.
+This is my first web project ever! I was tasked with designing a streaming platform for two target audiences: (a) independent film makers and (b) lovers of independent films. It has been developed as part of the HTML, CSS, Javascript 1, Content Management Systems, Design and Interaction Design modules of my front-end development study programme.
 
 ## Description
 
@@ -44,7 +44,7 @@ The development of this project consisted of the following steps:
 - UI: Typography, colour palette and layout component choices: Can apply basic knowledge about identity elements such as typography, color and graphic elements and perform simple development or editing of visual elements for on-screen use (3 points);
 - Report: Includes a thorough report (1 point).
 
-_Comment: The site has a very nice use of colour, and it’s easy to understand overall. The user experience is smooth, easy to navigate and master, with great user feedback & guidance. Keep consistency in mind for your site; the sizing & placing of the pages, text and elements across the website should be the same across the pages. Your mobile version works really well!_
+_Feedback from instructor: The site has a very nice use of colour, and it’s easy to understand overall. The user experience is smooth, easy to navigate and master, with great user feedback & guidance. Keep consistency in mind for your site; the sizing & placing of the pages, text and elements across the website should be the same across the pages. Your mobile version works really well!_
 
 ## Contributing
 
