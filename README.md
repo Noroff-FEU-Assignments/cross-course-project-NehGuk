@@ -2,16 +2,19 @@
 
 ![image](./assets/screenshot-square-eyes-1.jpg)
 
-XXXXXX
+This is my first web project ever! I was tasked with designing a streaming platform for two target audiences: independent film makers and lovers of independent films. It has been developed as part of the HTML, CSS, Javascript 1, Content Management Systems, Design and Interaction Design modules of my front-end development study programme.
 
 ## Description
 
 The development of this project consisted of the following steps:
 
-- Creating a headless WordPress installation and populating it with content;
-- Develop a website with HTML, CSS and Javascript;
+- Designing wireframes and prototypes;
+- Understanding concepts of design, typography and colour theory;
+- Developing a responsive website;
+- Creating a headless WordPress installation to manage the website's content;
 - Making API calls to the WordPress REST API to fetch the data;
-- Installing Hotjar and using it to improve the website's user experience.
+- Installing Hotjar;
+- Performing usability tests to improve user experience.
 
 ## Built with
 
@@ -27,7 +30,6 @@ The development of this project consisted of the following steps:
 - PRODUCT | [Link to the website deployed via Netlify](https://flamboyant-kepler-31f987.netlify.app/index.html)
 - [Mid-fidelity web prototype](https://xd.adobe.com/view/b9dfe27d-9705-4288-8e0a-04802ff3849d-ec8c/);
 - [Low-fidelity mobile prototype](https://xd.adobe.com/view/de1c8982-7250-447a-b29c-4a72defd56ff-8b4f/);
-- [Gantt chart]();
 - [Design: report](https://shared-assets.adobe.com/link/0b4ad6f6-64fa-460b-4458-ea1e81943740);
 - [Interaction Design: report](https://shared-assets.adobe.com/link/0f31874a-4d47-44f8-6693-13c8b2b2c257).
 
