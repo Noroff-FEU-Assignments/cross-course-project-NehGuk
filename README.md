@@ -1,45 +1,63 @@
-# Cross-course Project
+# Square Eyes
 
-By Henri Kugler
+![image](./assets/screenshot-square-eyes-1.jpg)
 
-## First delivery
+XXXXXX
 
-### Testing routine
+## Description
 
-- OK: tested on a Macbookpro 13'' (Firefox and Safari)
-- OK: tested on an iPad Air (Safari)
-- OK: tested on an iPhone 6s (Safari)
+The development of this project consisted of the following steps:
 
-### Accessibility score
+- Creating a headless WordPress installation and populating it with content;
+- Develop a website with HTML, CSS and Javascript;
+- Making API calls to the WordPress REST API to fetch the data;
+- Installing Hotjar and using it to improve the website's user experience.
 
-- Score: 95% (https://www.webaccessibility.com)
+## Built with
 
-### Comments
+- Adobe XD
+- HTML
+- CSS
+- Javascript
+- Wordpress REST API
+- Hotjar
 
-- My initial prototype includes horizontal scrolling carroussels, so I am still unable to replicated it with just basic HTML and CSS. As a result, I have changed the look and feel of some sections of the mobile size.
+## Links
 
----
+- PRODUCT | [Link to the website deployed via Netlify](https://flamboyant-kepler-31f987.netlify.app/index.html)
+- [Mid-fidelity web prototype](https://xd.adobe.com/view/b9dfe27d-9705-4288-8e0a-04802ff3849d-ec8c/);
+- [Low-fidelity mobile prototype](https://xd.adobe.com/view/de1c8982-7250-447a-b29c-4a72defd56ff-8b4f/);
+- [Gantt chart]();
+- [Design: report](https://shared-assets.adobe.com/link/0b4ad6f6-64fa-460b-4458-ea1e81943740);
+- [Interaction Design: report](https://shared-assets.adobe.com/link/0f31874a-4d47-44f8-6693-13c8b2b2c257).
 
-MJ's feedback:
+## Grade & Feedback from instructor
 
-☐ Pictures: max 200kb
-☐ Fix horizontal scrollbar on the big screen: .award-winning-films h2 {left: 35px}
-☐ Fix horizontal scrollbar on the small screen:
-☐ Each page needs one unique h1
-☐ Get rid of the <b> tags and make them either <span> or <strong> or <em>.
-☐ Missing alt on logo
-☐ The awesome play circle has a space in the file name
-☐ CSS: new-releases-section-grid: margin auto is repeated, and display grid as well
+**Grade:** 10 / 10
 
----
+**Grading criteria**
 
-# Accessibility test
+- User-Experience: Can apply knowledge of the central concepts and processes for visual designing user-friendly solutions and services for web and mobile devices (3points);
+- Technical proficiency: Masters Adobe XD and can perform simple image editing, designing or editing identity elements for on-screen use (3 points);
+- UI: Typography, colour palette and layout component choices: Can apply basic knowledge about identity elements such as typography, color and graphic elements and perform simple development or editing of visual elements for on-screen use (3 points);
+- Report: Includes a thorough report (1 point).
 
-Source: https://www.webaccessibility.com/
-Result: Health Score between 96% and 100%
+_Comment: The site has a very nice use of colour, and it’s easy to understand overall. The user experience is smooth, easy to navigate and master, with great user feedback & guidance. Keep consistency in mind for your site; the sizing & placing of the pages, text and elements across the website should be the same across the pages. Your mobile version works really well!_
 
-Source: https://accessibilitytest.org/results/RFRr78gApNSC
-Result: 95/100
+## Contributing
 
-Source: https://contrastchecker.online/
-All colour combinations displayed in the website comply with WCAG AAA standards
+Feel free to suggest improvements and open a pull request if you want to get involved in this project.
+
+## License
+
+- Copyright (c) 2022 Henri Kugler
+- [MIT License](/LICENSE)
+
+## Contact
+
+- [My LinkedIn page](https://www.linkedin.com/in/henri-kugler-78218422b/)
+- My personal portfolio (under construction)
+
+## Acknowledgments
+
+This project uses royalty-free images from [Unsplash](https://unsplash.com).
