@@ -28,10 +28,10 @@ The development of this project consisted of the following steps:
 ## Links
 
 - PRODUCT | [Link to the website deployed via Netlify](https://flamboyant-kepler-31f987.netlify.app/index.html)
-- [Mid-fidelity web prototype](https://xd.adobe.com/view/b9dfe27d-9705-4288-8e0a-04802ff3849d-ec8c/);
-- [Low-fidelity mobile prototype](https://xd.adobe.com/view/de1c8982-7250-447a-b29c-4a72defd56ff-8b4f/);
-- [Design: report](https://shared-assets.adobe.com/link/0b4ad6f6-64fa-460b-4458-ea1e81943740);
-- [Interaction Design: report](https://shared-assets.adobe.com/link/0f31874a-4d47-44f8-6693-13c8b2b2c257).
+- [Mid-fidelity web prototype](https://xd.adobe.com/view/b9dfe27d-9705-4288-8e0a-04802ff3849d-ec8c/)
+- [Low-fidelity mobile prototype](https://xd.adobe.com/view/de1c8982-7250-447a-b29c-4a72defd56ff-8b4f/)
+- [Design: report](https://shared-assets.adobe.com/link/0b4ad6f6-64fa-460b-4458-ea1e81943740)
+- [Interaction Design: report](https://shared-assets.adobe.com/link/0f31874a-4d47-44f8-6693-13c8b2b2c257)
 
 ## Grade & Feedback from instructor
 
@@ -58,7 +58,7 @@ Feel free to suggest improvements and open a pull request if you want to get inv
 ## Contact
 
 - [My LinkedIn page](https://www.linkedin.com/in/henri-kugler-78218422b/)
-- My personal portfolio (under construction)
+- [My personal portfolio](https://nehguk.github.io)
 
 ## Acknowledgments
 
